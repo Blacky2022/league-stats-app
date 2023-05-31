@@ -1,0 +1,69 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "CAITLYN",
+        "opis": "Umiejętność bierna: zwiększone skalowanie z obrażeniami od ataku. R: zadaje dodatkowe obrażenia skalujące się z szansą na trafienie krytyczne.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "DIANA",
+        "opis": "Umiejętność bierna: zmniejszone frontalne obrażenia obszarowe. E: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "DRAVEN",
+        "opis": "Q: zmniejszone obrażenia podstawowe.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "IRELIA",
+        "opis": "Zwiększona podstawowa odporność na magię, zwiększony pancerz co poziom.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "JAYCE",
+        "opis": "Q: zwiększone obrażenia w Formie Młota. E: zwiększone obrażenia w Formie Młota zależne od maksymalnego zdrowia celu.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KAI’SA",
+        "opis": "Umiejętność bierna: zwiększone obrażenia przy trafieniu. Q: zwiększone skalowanie z mocą umiejętności. R: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MALPHITE",
+        "opis": "Umiejętność bierna: skrócony czas odnowienia we wczesnej fazie gry. W: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "POPPY",
+        "opis": "Q: zmniejszone obrażenia zadawane stworom i potworom.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "TRISTANA",
+        "opis": "Q: zwiększona dodatkowa prędkość ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "YUUMI",
+        "opis": "E: zmniejszone skalowanie dodatkowej prędkości ruchu z mocą umiejętności, wydłużony czas odnowienia w późnej fazie gry.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ZERI",
+        "opis": "Q: zmniejszone skalowanie z obrażeniami od ataku. W: zmniejszone skalowanie z obrażeniami od ataku i mocą umiejętności.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ZOE",
+        "opis": "W: zmodyfikowane. E: zwiększone obrażenia podstawowe, zwiększone skalowanie z mocą umiejętności, zwiększone obrażenia od pęknięcia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "ZYRA",
+        "opis": "E: zmodyfikowano.",
+        "czy_buff": false
+      }
+    ]
+}

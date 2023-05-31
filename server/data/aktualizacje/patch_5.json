@@ -1,0 +1,44 @@
+{
+  "zmiany_postaci": [
+    {
+      "bohater": "AHRI",
+      "opis": "W: zmniejszone obrażenia podstawowe, zwiększony koszt many. E: zwiększony koszt many.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "GWEN",
+      "opis": "Umiejętność bierna: zmniejszone obrażenia przeciwko potworom. E: zmniejszony dodatkowy zasięg ataku.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "KENNEN",
+      "opis": "W: zwiększone dodatkowe obrażenia ataków podstawowych przy maksymalnej liczbie ładunków.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "MASTER YI",
+      "opis": "Q: zmniejszone obrażenia i dodatkowe obrażenia trafień krytycznych; każde oznaczenie nakłada teraz efekty przy trafieniu; skrócenie czasu odnowienia przy trafieniu teraz skaluje się z przyspieszeniem umiejętności. E oraz R: zostają od teraz wstrzymane podczas działania Q Mastera Yi, a ponadto można ich również wtedy użyć. E: zmniejszone obrażenia podstawowe w późnej fazie gry.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "MISS FORTUNE",
+      "opis": "W: zwiększona bierna prędkość ruchu po odrodzeniu.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "SAMIRA",
+      "opis": "Zwiększony przyrost zdrowia i pancerza. R: skrócony czas odnowienia.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "SERAPHINE",
+      "opis": "W: zmniejszony koszt many w późnej fazie gry; wydłużony czas odnowienia we wczesnej fazie gry i skrócony w późnej; zmniejszona tarcza, która teraz skaluje się razem z poziomem umiejętności; tarcze sojuszników będą teraz identyczne jak u samej Seraphine; zmodyfikowane skalowanie leczenia. E: skrócony czas odnowienia na niższych poziomach.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "XIN ZHAO",
+      "opis": "E: wydłużony czas odnowienia. R: skrócony czas działania niewrażliwości.",
+      "czy_buff": false
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "SIVIR",
+        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
+        "czy_buff": true
+      },
+      {
+        "bohater": "CORKI",
+        "opis": "E: zwiększone skalowanie z obrażeniami od ataku. R: zmniejszone obrażenia podstawowe; zmniejszone skalowanie z obrażeniami od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ELISE",
+        "opis": "Zwiększono podstawowe zdrowie, przyrost zdrowia i podstawowy pancerz. Q: zwiększone obrażenia w ludzkiej postaci.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "EVELYNN",
+        "opis": "Umiejętność bierna: zwiększone leczenie. W: zwiększone obniżenie odporności na magię. R: teraz skraca odliczanie do ponownego zakamuflowania z efektu biernego.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "FIDDLESTICKS",
+        "opis": "Q: dłuższy czas działania przestraszenia. R: zwiększone obrażenia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GALIO",
+        "opis": "Q: zwiększone obrażenia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GWEN",
+        "opis": "Zwiększony przyrost regeneracji zdrowia. Q: zwiększone obrażenia ciachnięcia; zmniejszone obrażenia nieuchronne środkowego ciachnięcia; teraz zadaje mniejsze obrażenia stworom, ale zadaje dodatkowe obrażenia stworom z niskim zdrowiem. W: zwiększony dodatkowy pancerz i odporność na magię; skrócony czas działania. E: zwiększone dodatkowe obrażenia magiczne przy trafieniu; zwiększony dodatkowy zasięg ataku; wydłużony czas odnowienia; wydłużony czas odnowienia zwracany po pierwszym ataku podstawowym. R: zwiększone obrażenia za każdą igłę; zmodyfikowane warunki ponownego użycia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KARTHUS",
+        "opis": "Zwiększony podstawowy pancerz i przyrost zdrowia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KLED",
+        "opis": "Q: zwiększone skalowanie z obrażeniami od ataku. W: krótszy czas odnowienia na wszystkich poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MASTER YI",
+        "opis": "Zwiększony zasięg ataku. Q: zmodyfikowano. W: skrócony czas odnowienia; zmieniony koszt many; zwiększone zmniejszenie obrażeń; dostosowano zmniejszenie obrażeń utrzymujących się.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "OLAF",
+        "opis": "Zmniejszona podstawowa regeneracja zdrowia i jej przyrost. Umiejętność bierna: zwiększona maksymalna dodatkowa prędkość ataku na niższych poziomach. Q: zwiększony koszt many.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RENEKTON",
+        "opis": "R: obrażenia skalują się teraz z obrażeniami od ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TALIYAH",
+        "opis": "Q: zwiększone obrażenia; zmniejszony koszt many; zmniejszone dodatkowe obrażenia przeciwko potworom; skały ogłuszają teraz potwory z dżungli. R: zmodyfikowano.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "VEX",
+        "opis": "Q: krótszy czas odnowienia na wszystkich poziomach, zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "VOLIBEAR",
+        "opis": "Q: zmniejszona dodatkowa prędkość ruchu; zmniejszone obrażenia podstawowe. W: zmniejszone obrażenia podstawowe; zmniejszone skalowanie z dodatkowym zdrowiem. E: zmniejszone obrażenia zależne od maksymalnego zdrowia celu; zmniejszony limit obrażeń przeciwko jednostkom niebędącym bohaterami.",
+        "czy_buff": false
+      }
+    ]
+  }

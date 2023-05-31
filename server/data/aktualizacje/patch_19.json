@@ -1,0 +1,99 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "SYNDRA",
+        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "BLITZCRANK",
+        "opis": "Zwiększona podstawowa prędkość ataku, zwiększone skalowanie prędkości ataku. W: zwiększony koszt many; zwiększona dodatkowa prędkość ataku, teraz wzmacnia ataki podstawowe, gdy jest aktywne. E: zwiększony koszt many; wydłużony czas działania podrzucenia; zwiększone skalowanie z mocą umiejętności. R: usunięto limit ładunków efektu biernego; zwiększone skalowanie obrażeń ładunków przy trafieniu z mocą umiejętności; teraz skalowanie z mocą umiejętności użycia zwiększa się wraz z poziomem.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "EKKO",
+        "opis": "Umiejętność bierna: zwiększone obrażenia; zwiększona dodatkowa szybkość ruchu na niskich poziomach. R: zwiększone obrażenia na wyższych poziomach, zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "FIZZ",
+        "opis": "E: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GAREN",
+        "opis": "E: zwiększone obrażenia trafienia krytycznego.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "JINX",
+        "opis": "Zwiększone podstawowe obrażenia od ataku. R: zwiększone obrażenia podstawowe zadawane głównemu celowi.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KAI’SA",
+        "opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MALPHITE",
+        "opis": "W: zwiększone skalowanie z mocą umiejętności. R: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MASTER YI",
+        "opis": "Zmniejszony przyrost obrażeń od ataku. E: zmniejszone skalowanie z obrażeniami od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "NASUS",
+        "opis": "Q: zwiększony zasięg wzmocnionego ataku. W: zwiększone spowolnienie prędkości ataku. R: zwiększone rozmiary skalują się teraz z poziomem umiejętności; promień obrażeń obszarowych zwiększa się w zależności od rozmiarów Nasusa; zmieniono częstotliwość zadawania obrażeń.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "NUNU",
+        "opis": "R: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RAKAN",
+        "opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności. Q: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "REK’SAI",
+        "opis": "Zmniejszone podstawowe obrażenia od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "RYZE",
+        "opis": "Q: zwiększone skalowanie z mocą umiejętności. W: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SHYVANA",
+        "opis": "W: zwiększone skalowanie ataku obszarowego z obrażeniami od ataku; zwiększone skalowanie dodatkowych obrażeń przy trafieniu z obrażeniami od ataku. E: zmniejszone obrażenia procentu zdrowia przy atakach podstawowych; zwiększone skalowanie z obrażeniami od ataku; zwiększone skalowanie z mocą umiejętności. Zwiększone skalowanie R z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SONA",
+        "opis": "Q: zwiększone obrażenia podstawowe. E: zwiększone spowolnienie Akordu Potęgi.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TAHM KENCH",
+        "opis": "Q: zwiększone skalowanie z mocą umiejętności. W: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TWITCH",
+        "opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności. E: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "UDYR",
+        "opis": "Q: przebudzone zadaje teraz minimalną wartość obrażeń stworom. W: zwiększone leczenie przy trafieniu przeciwko stworom. R: zwiększone obrażenia zadawane stworom na niższych poziomach i zmniejszone na wyższych.",
+        "czy_buff": true
+      }
+    ]
+  }

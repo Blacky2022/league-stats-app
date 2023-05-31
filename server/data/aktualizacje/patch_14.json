@@ -1,0 +1,94 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "AATROX",
+        "opis": "Zwiększony przyrost zdrowia. E: zmniejszone leczenie z efektu biernego na wyższych poziomach. R: zmniejszone dodatkowe leczenie na wyższych poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "ALISTAR",
+        "opis": "Q: zmniejszony koszt many i skrócony czas odnowienia na wszystkich poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GANGPLANK",
+        "opis": "Zmniejszone podstawowe zdrowie i pancerz; zwiększony przyrost zdrowia. Umiejętność bierna: teraz skaluje się z szansą na trafienie krytyczne. Q: zmniejszone obrażenia podstawowe na niższych poziomach, ale zwiększone na wyższych. E: osłabione spowolnienie, teraz skaluje się z szansą na trafienie krytyczne; dodatkowe obrażenia fizyczne zmniejszone na niższych poziomach i zwiększone na wyższych; zmniejszone dodatkowe obrażenia trafień krytycznych.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GNAR",
+        "opis": "Zmniejszone podstawowe zdrowie; zmniejszony przyrost regeneracji zdrowia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "JANNA",
+        "opis": "E: zwiększona podstawowa wytrzymałość tarczy na wszystkich poziomach, zmniejszone dodatkowe leczenie i moc tarczy. R: zwiększone leczenie na sekundę na wszystkich poziomach; zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "JARVAN IV",
+        "opis": "Q: zwiększone skalowanie z obrażeniami od ataku. E: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KAYN",
+        "opis": "Zwiększony przyrost zdrowia. Umiejętność bierna: zmniejszone leczenie Rhaasta zależne od zadanych obrażeń.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LEBLANC",
+        "opis": "Zwiększona podstawowa mana i przyrost many. W: zwiększone obrażenia podstawowe na wyższych poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "NOCTURNE",
+        "opis": "Zmodyfikowano umiejętność bierną.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "PANTHEON",
+        "opis": "Q: zwiększone obrażenia zadawane potworom.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RENATA GLASC",
+        "opis": "Zmniejszone podstawowe zdrowie i obrażenia od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SERAPHINE",
+        "opis": "W: zmniejszone skalowanie tarczy i leczenia z mocą umiejętności.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SIVIR",
+        "opis": "Q: naprawiono błędy. W: zmniejszone obrażenia zadawane stworom; teraz wykańcza stwory, których poziom zdrowia spadł poniżej określonego progu.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "TEEMO",
+        "opis": "Zwiększony przyrost many. R: zwiększony zasięg na niższych poziomach; zwiększone skalowanie z mocą umiejętności; koszt many teraz skaluje się w dół z poziomem.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "VARUS",
+        "opis": "Zwiększone podstawowe obrażenia od ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "WUKONG",
+        "opis": "Zwiększona podstawowa regeneracja zdrowia. Umiejętność bierna: zmniejszona regeneracja zdrowia za każdy ładunek.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "YUUMI",
+        "opis": "E: zmniejszone skalowanie z mocą umiejętności.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ZERI",
+        "opis": "Q: efekt bierny zmodyfikowany. R: zmniejszone dodatkowe obrażenia magiczne.",
+        "czy_buff": false
+      }
+    ]
+}

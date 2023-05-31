@@ -1,0 +1,69 @@
+{
+	"zmiany_postaci": [
+	{
+	"bohater": "AHRI",
+	"opis": "Bohaterka została odświeżona. Zmodyfikowano statystyki podstawowe i wszystkie umiejętności.",
+	"czy_buff": true
+	},
+	{
+	"bohater": "AKSHAN",
+	"opis": "Umiejętność bierna: zmniejszone obrażenia.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "AMUMU",
+	"opis": "Zmniejszony podstawowy pancerz. E: zmniejszenie obrażeń efektu biernego jest teraz ograniczone dla każdych zadanych obrażeń.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "BRAND",
+	"opis": "Drobne zmiany umiejętności biernej i R.",
+	"czy_buff": true
+	},
+	{
+	"bohater": "CAITLYN",
+	"opis": "Zmniejszony przyrost obrażeń od ataku. Q: zmniejszone obrażenia.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "CORKI",
+	"opis": "Opóźniony czas pojawienia się pierwszej Paczki i wydłużony czas jej ponownego pojawienia się.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "LEBLANC",
+	"opis": "W: zmniejszone obrażenia na wyższych poziomach.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "LILLIA",
+	"opis": "R: zwiększony czas trwania uśpienia na niższych poziomach.",
+	"czy_buff": true
+	},
+	{
+	"bohater": "NAMI",
+	"opis": "Umiejętność bierna: początkowa dodatkowa prędkość ruchu jest zwiększona i teraz zanika w czasie. E: zmniejszone obrażenia podstawowe przy trafieniu.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "QUINN",
+	"opis": "W: zwiększona dodatkowa prędkość ataku efektu biernego na wczesnych poziomach. R: zwiększone skalowanie obrażeń.",
+	"czy_buff": true
+	},
+	{
+	"bohater": "SENNA",
+	"opis": "Umiejętność bierna: zmniejszona częstotliwość wypadania dusz za zabite stwory i pomniejsze potwory.",
+	"czy_buff": false
+	},
+	{
+	"bohater": "TWISTED FATE",
+	"opis": "Q: zwiększone skalowanie obrażeń; zmniejszone obrażenia podstawowe na wyższych poziomach. E: zmniejszona dodatkowa prędkość ataku na niższych poziomach.",
+	"czy_buff": true
+	},
+	{
+	"bohater": "ZERI",
+	"opis": "Zmniejszona podstawowa prędkość ruchu. Zmniejszone obrażenia w pełni naładowanego ataku podstawowego. R: zmniejszone obrażenia łańcucha wyładowań elektrycznych; teraz może trafić krytycznie.",
+	"czy_buff": false
+	}
+]
+}

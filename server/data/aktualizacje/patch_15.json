@@ -1,0 +1,89 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "CAITLYN",
+        "opis": "Umiejętność bierna: zwiększone skalowanie z obrażeniami od ataku. R: zadaje dodatkowe obrażenia skalujące się z szansą na trafienie krytyczne.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "AKALI",
+        "opis": "W: zwiększone przywracanie energii i premia do maksymalnej energii.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GWEN",
+        "opis": "Q: zmniejszona konwersja obrażeń nieuchronnych.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "KALISTA",
+        "opis": "Zmniejszone podstawowe obrażenia od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "KENNEN",
+        "opis": "W: zmniejszony czas odnowienia we wczesnej fazie gry, zwiększone obrażenia magiczne. R: zwiększone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LEE SIN",
+        "opis": "Q, W i E: zmniejszony koszt energii reaktywacji.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LEONA",
+        "opis": "Q: zmniejszony koszt many na wszystkich poziomach. R: wydłużony czas działania kontroli tłumu.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LILLIA",
+        "opis": "Umiejętność bierna: zwiększony limit obrażeń zadawanych potworom.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MASTER YI",
+        "opis": "W: zwiększone przywracanie energii i premia do maksymalnej energii.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "QIYANA",
+        "opis": "Zmniejszone skalowanie dodatkowych obrażeń od ataku umiejętności biernej. Usunięto błąd Pierwszego Uderzenia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "RAMMUS",
+        "opis": "R: zmodyfikowany czas odnowienia, zwiększony podstawowy zasięg rzucenia, zwiększony przyrost zasięgu doskoku, zwiększona minimalna i maksymalna prędkość doskoku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SHEN",
+        "opis": "E: zwiększony zwrot energii umiejętności biernej w późnej fazie gry.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SINGED",
+        "opis": "Zwiększona premia do prędkości ruchu umiejętności biernej, zmniejszony czas odnowienia na każdym celu. R: zwiększona premia do statystyk we wczesnej fazie gry.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SIVIR",
+        "opis": "Zmniejszony przyrost obrażeń od ataku. E: wydłużony czas odnowienia na wszystkich poziomach. R: wydłużony czas odnowienia na wszystkich poziomach.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "TALIYAH",
+        "opis": "E: wydłużony czas odnowienia na wszystkich poziomach. R: skrócony czas działania ściany.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "THRESH",
+        "opis": "Q: zmniejszony czas odnowienia na wszystkich poziomach, zwiększone obrażenia magiczne na wszystkich poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "ZED",
+        "opis": "E: zmniejszony koszt energii.",
+        "czy_buff": true
+      }
+    ]
+}

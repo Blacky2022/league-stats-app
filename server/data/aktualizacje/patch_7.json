@@ -1,0 +1,59 @@
+{
+"zmiany_postaci": [
+{
+"bohater": "GANGPLANK",
+"opis": "Umiejętność bierna: zwiększone obrażenia podstawowe podpalenia na wyższych poziomach. W: zmniejszony koszt many.",
+"czy_buff": true
+},
+{
+"bohater": "GWEN",
+"opis": "E: zwiększone skrócenie czasu odnowienia. R: skrócony czas odnowienia na niższych poziomach.",
+"czy_buff": true
+},
+{
+"bohater": "JAYCE",
+"opis": "Zmniejszone podstawowe zdrowie, zwiększony przyrost zdrowia i odpowiednio dostosowany pancerz.",
+"czy_buff": false
+},
+{
+"bohater": "KALISTA",
+"opis": "Zwiększone podstawowa mana, prędkość ruchu oraz przyrost prędkości ataku.",
+"czy_buff": true
+},
+{
+"bohater": "KARTHUS",
+"opis": "Q: zwiększone obrażenia przeciwko potworom.",
+"czy_buff": true
+},
+{
+"bohater": "LEE SIN",
+"opis": "Zmniejszone podstawowe obrażenia od ataku. Q: zmniejszone obrażenia podstawowe.",
+"czy_buff": false
+},
+{
+"bohater": "LILLIA",
+"opis": "Umiejętność bierna: zwiększone leczenie przeciwko bohaterom. W: zwiększone obrażenia podstawowe.",
+"czy_buff": true
+},
+{
+"bohater": "PANTHEON",
+"opis": "Zmniejszona podstawowa regeneracja zdrowia. Q: zwiększony zasięg i zmniejszona szerokość przy wciśnięciu. E: samospowolnienie nie jest już nakładane podczas poruszania się w tył. R: ląduje szybciej.",
+"czy_buff": false
+},
+{
+"bohater": "RENGAR",
+"opis": "Q: zmniejszone obrażenia dodatkowe zadawane budowlom. W: zwiększone obrażenia dodatkowe zadawane potworom.",
+"czy_buff": true
+},
+{
+"bohater": "RYZE",
+"opis": "Q: zwiększone skalowanie obrażeń z mocą umiejętności, zmniejszone skalowanie z dodatkową maną.",
+"czy_buff": false
+},
+{
+"bohater": "WUKONG",
+"opis": "Q: skrócony czas odnowienia. W: skrócony czas odnowienia na wyższych poziomach, doskok może teraz przechodzić przez teren. E: zwiększone skalowanie z mocą umiejętności oraz obrażenia przeciwko potworom.",
+"czy_buff": true
+}
+]
+}

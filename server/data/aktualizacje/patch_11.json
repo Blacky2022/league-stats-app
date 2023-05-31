@@ -1,0 +1,144 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "APHELIOS",
+        "opis": "Umiejętność bierna: zwiększona prędkość ataku i destrukcja co poziom.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "BRAND",
+        "opis": "Umiejętność bierna: zmniejszone procentowe obrażenia od podpalenia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "CAITLYN",
+        "opis": "Q: zmniejszone skalowanie z obrażeniami od ataku oraz koszt many na niższych poziomach i zwiększone na wyższych poziomach. E: zwiększone obrażenia podstawowe i skrócony czas odnowienia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "FIZZ",
+        "opis": "Zmniejszony przyrost zdrowia. Zwiększony przyrost many.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GRAGAS",
+        "opis": "Q: zwiększone skalowanie z mocą umiejętności; skrócony czas odnowienia. E: skrócony czas odnowienia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GWEN",
+        "opis": "W: zwiększony czas odnowienia; zmniejszony dodatkowy pancerz i odporność na magię na niższych poziomach; teraz skaluje się z poziomem umiejętności. E: zmniejszone zwrócenie czasu odnowienia z pierwszego ataku podstawowego.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "IRELIA",
+        "opis": "Q: zwiększone leczenie. E: skrócony czas odnowienia na niższych poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KAYN",
+        "opis": "Q: zmniejszone obrażenia w postaci Darkina.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "KOG’MAW",
+        "opis": "Q: zmniejszone osłabienie pancerza i odporności na magię; zmniejszona prędkość ataku efektu biernego. W: zmniejszony procent obrażeń od maksymalnego zdrowia przy trafieniu.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "LEE SIN",
+        "opis": "Zwiększone podstawowe obrażenia od ataku. Q: zwiększone obrażenia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LILLIA",
+        "opis": "Zmniejszone podstawowe zdrowie. Umiejętność bierna: zmniejszone obrażenia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "MASTER YI",
+        "opis": "Zmniejszony przyrost zdrowia. E: zmniejszone podstawowe obrażenia nieuchronne przy trafieniu..",
+        "czy_buff": false
+      },
+      {
+        "bohater": "NUNU I WILLUMP",
+        "opis": "Q: zwiększone leczenie przeciwko jednostkom niebędącym bohaterami. E: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "OLAF",
+        "opis": "Umiejętność bierna: zwiększona maksymalna wartość progu kradzieży życia. Q: zwiększone obrażenia; skrócony minimalny czas ponownego użycia. W: zwiększony czas odnowienia na wyższych poziomach. R: zmniejszony pancerz i odporność na magię efektu biernego.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RAKAN",
+        "opis": "Q: zwiększone leczenie. W: skrócony czas odnowienia. E: zmniejszony koszt many; zwiększona wytrzymałość tarczy.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RENGAR",
+        "opis": "Zmniejszone podstawowe zdrowie. R: wydłużony czas odnowienia na wyższych poziomach.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SAMIRA",
+        "opis": "Zwiększony przyrost obrażeń od ataku. Q: zwiększone skalowanie z obrażeniami od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SENNA",
+        "opis": "Umiejętność bierna: zmniejszone leczenie. W: zmniejszone obrażenia magiczne i skalowanie z mocą umiejętności. R: zmniejszone leczenie co sekundę.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SWAIN",
+        "opis": "Zwiększone podstawowe obrażenia od ataku. Q: zwiększone obrażenia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SYLAS",
+        "opis": "W: zmniejszony koszt many; zwiększone skalowanie leczenia z mocą umiejętności; skrócony czas odnowienia na niższych poziomach. E: skrócony czas odnowienia na niższych poziomach.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TAHM KENCH",
+        "opis": "Umiejętność bierna: zwiększone obrażenia magiczne przy trafieniu. Q: zwiększone leczenie. R: zwiększona wytrzymałość tarczy.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TALIYAH",
+        "opis": "Zmniejszone podstawowe zdrowie. Umiejętność bierna: zaktualizowano. Q: zmniejszone obrażenia. E: zwiększone obrażenia zadawane potworom. R: zaktualizowano.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "TARIC",
+        "opis": "Q: zwiększone leczenie; zmniejszony koszt many i nie zwiększa się już z poziomem. E: skrócony czas odnowienia; zwiększony czas działania ogłuszenia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TRYNDAMERE",
+        "opis": "Q: zwiększone leczenie. R: skrócony czas odnowienia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "VEIGAR",
+        "opis": "Zmniejszony podstawowy pancerz i zwiększony przyrost pancerza. E: wydłużony czas odnowienia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "WUKONG",
+        "opis": "W: dłuższy czas odnowienia na niższych poziomach. E: zmniejszone obrażenia dodatkowe zadawane potworom.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "XIN ZHAO",
+        "opis": "Umiejętność bierna: zwiększone skalowanie leczenia z obrażeniami od ataku. W: zwiększone obrażenia; teraz koszt many zmniejsza się wraz z poziomem.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "ZERI",
+        "opis": "Q: zwiększone obrażenia użycia; zwiększone skalowanie z mocą umiejętności i obrażenia zależne od brakującego zdrowia celu naładowanego ataku podstawowego; usunięto spowolnienie z naładowanych ataków podstawowych. W: zwiększone skalowanie z obrażeniami od ataku; osłabiony stopień spowolnienia; skrócony czas odnowienia. E: skrócony czas odnowienia; zmniejszone skrócenie czasu odnowienia za każdy atak podstawowy i trafienie krytyczne. R: skrócony czas odnowienia; zmniejszona prędkość ruchu za każdy ładunek; zwiększona liczba ładunków za każdego bohatera trafionego pierwszym użyciem.",
+        "czy_buff": true
+      }
+    ]
+  }

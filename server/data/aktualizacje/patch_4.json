@@ -1,0 +1,91 @@
+{
+  "zmiany_postaci": [
+    {
+      "bohater": "AATROX",
+      "opis": "Q: zwiększone obrażenia dodatkowe Ma tę moc.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "AMUMU",
+      "opis": "E: zwiększona podstawowa redukcja obrażeń.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "ASHE",
+      "opis": "R: zwiększona szybkość strzały.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "BLITZCRANK",
+      "opis": "Zmniejszona podstawowa regeneracja zdrowia.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "DR MUNDO",
+      "opis": "Zmniejszony przyrost obrażeń od ataku. R: czas odnowienia nie zmniejsza się już wraz z rangą.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "ILLAOI",
+      "opis": "Zwiększona podstawowa prędkość ataku. W: zwiększone skalowanie obrażeń.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "KALISTA",
+      "opis": "Zwiększony podstawowy pancerz.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "LUCIAN",
+      "opis": "Q: zmniejszony koszt many.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "NAMI",
+      "opis": "E: cofnięto zmianę obrażeń podstawowych przy trafieniu.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "NEEKO",
+      "opis": "Zmniejszone pole trafienia. Q: zwiększone dodatkowe obrażenia podstawowe rozkwitu. W: skrócony czas odnowienia.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "NUNU I WILLUMP",
+      "opis": "Zmniejszony przyrost zdrowia. Q: zmniejszone podstawowe obrażenia i leczenie z bohaterów.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "QIYANA",
+      "opis": "Umiejętność bierna: zmniejszone skalowanie obrażeń od ataku.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "RUMBLE",
+      "opis": "Zwiększony podstawowy pancerz.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "SETT",
+      "opis": "Zwiększony przyrost zdrowia.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "VEIGAR",
+      "opis": "Zmniejszony podstawowy pancerz. Zwiększony przyrost pancerza. E: wydłużony czas odnowienia na niższych poziomach.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "
+
+XAYAH",
+      "opis": "E: zwiększone wzmocnienie obrażeń zależne od szansy na trafienie krytyczne.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "ZERI",
+      "opis": "Zmniejszone podstawowe obrażenia i skalowanie z mocą umiejętności nienaładowanego ataku podstawowego. Zwiększone wzmocnienie obrażeń przeciwko wrogom o niskim poziomie zdrowia. Zmniejszone we wczesnej fazie gry i zwiększone w późnej spowolnienie naładowanego ataku podstawowego; skrócony czas jego działania. Q: zmniejszone obrażenia podstawowe, które jednak zostają pomnożone przy trafieniu krytycznym; zwiększony stosunek nadwyżki prędkości ataku do obrażeń od ataku. W: zmniejszone spowolnienie we wczesnej fazie gry; wydłużony czas odnowienia we wczesnej fazie, ale teraz zmniejsza się on w miarę zdobywania kolejnych rang. E: skrócony czas odnowienia. R: premia do prędkości ataku nie zwiększa się już wraz z poziomem superumiejętności.",
+      "czy_buff": true
+    }
+  ]
+}

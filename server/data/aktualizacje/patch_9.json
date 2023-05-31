@@ -1,0 +1,79 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "OLAF",
+        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
+        "czy_buff": true
+      },
+      {
+        "bohater": "TALIYAH",
+        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
+        "czy_buff": true
+      },
+      {
+        "bohater": "AHRI",
+        "opis": "E: wydłużony czas odnowienia. R: wydłużony czas odnowienia na wszystkich poziomach.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "BRAUM",
+        "opis": "Krótszy czas odnowienia umiejętności biernej w późnej fazie gry. E: zwiększone zmniejszenie obrażeń.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "HECARIM",
+        "opis": "Q: zwiększone skalowanie z obrażeniami od ataku. W: skrócony czas odnowienia.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MASTER YI",
+        "opis": "R: zmniejszona dodatkowa prędkość ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "NIDALEE",
+        "opis": "Zmniejszone podstawowe zdrowie.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "PYKE",
+        "opis": "Umiejętność bierna: zwiększona konwersja szarego zdrowia. Q: zwiększony koszt many; zwiększona wartość zwracanej many; teraz zwraca manę przy trafieniu wrogiego bohatera. R: skrócony czas odnowienia; zmniejszono ilość okazji do zdobycia Twojej Działki.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RENATA GLASC",
+        "opis": "Zmniejszony podstawowy pancerz. Umiejętność bierna: zmniejszone obrażenia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "RENEKTON",
+        "opis": "Zwiększony przyrost zdrowia i obrażeń od ataku. W: zwiększone obrażenia podstawowe; wydłużony czas odnowienia na niższych poziomach i skrócony na wyższych poziomach. R: zwiększone obrażenia podstawowe.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "RENGAR",
+        "opis": "W: zmniejszone obrażenia przeciwko potworom.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "SHYVANA",
+        "opis": "W: zmniejszona częstotliwość zadawania obrażeń.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SION",
+        "opis": "Zmniejszone obrażenia zadawane budowlom w postaci zombie umiejętności biernej Siona.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "THRESH",
+        "opis": "Umiejętność bierna: zwiększone moc umiejętności i dodatkowy pancerz za każdą duszę. W: zwiększone skalowanie wytrzymałości tarczy z duszami.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "VARUS",
+        "opis": "Umiejętność bierna: zwiększona prędkość ataku przyznawana za zabójstwa stworów i bohaterów. W: zwiększone obrażenia magiczne przy trafieniu.",
+        "czy_buff": true
+      }
+    ]
+}

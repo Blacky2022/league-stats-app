@@ -1,0 +1,34 @@
+{
+  "zmiany_postaci": [
+    {
+      "bohater": "DARIUS",
+      "opis": "R: zwiększone obrażenia podstawowe.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "HECARIM",
+      "opis": "Q i E: zmniejszone obrażenia podstawowe na późnym etapie gry.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "ILLAOI",
+      "opis": "R: drobne zmiany; kilka naprawionych błędów.",
+      "czy_buff": false
+    },
+    {
+      "bohater": "JAX",
+      "opis": "Zwiększone podstawowe zdrowie. W: zwiększone obrażenia podstawowe.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "NIDALEE",
+      "opis": "W: zmniejszony koszt w ludzkiej postaci. E: zmniejszony koszt many w późnej fazie i zwiększony zasięg rzucenia. W: zwiększony promień obrażeń w postaci pumy.",
+      "czy_buff": true
+    },
+    {
+      "bohater": "RENGAR",
+      "opis": "Umiejętność bierna: poprawiono działanie Zaciekłości, skoków i Kościanego Naszyjnika; dodano nowy pasek zasobów Zaciekłości. Q: teraz ataki podstawowe zawsze trafiają krytycznie; obrażenia skalują się z szansą na trafienie krytyczne; ma zastosowanie przeciwko wieżom; nie ma już zastosowania przeciwko roślinom. E: usunięto czas rzucenia podczas skoku; teraz przyznaje prawdziwe widzenie i nieco wizji wokół celu. R: teraz przyznaje nieco wizji wokół celu.",
+      "czy_buff": true
+    }
+  ]
+}

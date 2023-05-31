@@ -1,0 +1,59 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "ASHE",
+        "opis": "Q: zwiększona dodatkowa prędkość ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "HECARIM",
+        "opis": "Q: zmniejszone skalowanie z obrażeniami od ataku, zmniejszone obrażenia za każdy ładunek. W: zmniejszone leczenie obrażeń po redukcji.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "KALISTA",
+        "opis": "Zmniejszone podstawowe zdrowie.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "KAYN",
+        "opis": "Q: zmniejszone skalowanie z dodatkowymi obrażeniami od ataku w postaci Darkina.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "LEE SIN",
+        "opis": "Zwiększony przyrost zdrowia. W: zwiększone kradzież życia i wampiryzm zaklęć.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "LULU",
+        "opis": "W: zmniejszona dodatkowa prędkość ruchu, skrócony czas trwania przemiany, wydłużony czas odnowienia.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "MAOKAI",
+        "opis": "Umiejętność bierna: zmniejszone leczenie. Q: zwiększone obrażenia dodatkowe zadawane potworom. E: zmniejszone skalowanie z mocą umiejętności.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MISS FORTUNE",
+        "opis": "Zmniejszony przyrost zdrowia i obrażeń od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "NOCTURNE",
+        "opis": "Zmniejszony przyrost obrażeń od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "THRESH",
+        "opis": "Zwiększony przyrost zdrowia. E: Zwiększone obrażenia podstawowe.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "UDYR",
+        "opis": "Zmniejszony podstawowy przyrost zdrowia i pancerza. Zmniejszony koszt many Q, zwiększone skalowanie mocy umiejętności, pierwsze 2 ataki zyskują teraz 50 jedn. zasięgu, przebudzone Q zadaje teraz dodatkowe obrażenia od maksymalnego zdrowia przy pierwszych 2 atakach. W: zmniejszony odsetek leczenia, kradzież życia skaluje się teraz z poziomem. R: zmniejszone obrażenia podstawowe; zmniejszone skalowanie z mocą umiejętności, dostosowano obrażenia zadawane stworom.",
+        "czy_buff": true
+      }
+    ]
+  }

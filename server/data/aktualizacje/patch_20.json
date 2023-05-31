@@ -1,0 +1,69 @@
+{
+    "zmiany_postaci": [
+      {
+        "bohater": "AATROX",
+        "opis": "Umiejętność bierna: zmniejszone leczenie.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "AKSHAN",
+        "opis": "E: dłuższy czas działania.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "BLITZCRANK",
+        "opis": "Zmniejszone podstawowe obrażenia od ataku, zmniejszona podstawowa prędkość ataku. Zmodyfikowano tarczę umiejętności biernej. W: zwiększone obrażenia zadawane potworom. E: zmniejszone obrażenia przeciwko bohaterom.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ELISE",
+        "opis": "Q: zwiększony zasięg w ludzkiej postaci.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "EVELYNN",
+        "opis": "Q: zwiększone obrażenia dodatkowe zadawane oznaczonym celom. W: wydłużony czas działania uroku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "GWEN",
+        "opis": "Q: zwiększone obrażenia podstawowe.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "JAYCE",
+        "opis": "W: zwiększone przywrócenie many. R: dodatkowa odporność na magię i pancerz teraz skalują się z dodatkowymi obrażeniami od ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "KENNEN",
+        "opis": "E: zmodyfikowana dodatkowa prędkość ataku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "MAOKAI",
+        "opis": "Zmniejszone bierne leczenie od maksymalnego zdrowia. R: wydłużony czas odnowienia na wyższych poziomach.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "RAMMUS",
+        "opis": "W: usunięto spowolnienie samego siebie. R: zwiększona prędkość doskoku.",
+        "czy_buff": true
+      },
+      {
+        "bohater": "SETT",
+        "opis": "Zmniejszona podstawowa odporność na magię. Umiejętność bierna: zmniejszona regeneracja zdrowia we wczesnej fazie gry, zwiększone skalowanie z obrażeniami od ataku prawej pięści.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "WUKONG",
+        "opis": "R: zwiększone skalowanie z obrażeniami od ataku.",
+        "czy_buff": false
+      },
+      {
+        "bohater": "ZIGGS",
+        "opis": "Q: zwiększone obrażenia podstawowe.",
+        "czy_buff": true
+      }
+    ]
+  }
