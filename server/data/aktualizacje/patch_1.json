@@ -1,25 +1,24 @@
 {
-  "zmiany_postaci": [
-    {
-      "bohater": "DIANA",
-      "opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności i skalowanie obrażeń zadawanych potworom.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "GANGPLANK",
-      "opis": "Q: zmniejszony koszt many i skrócony czas odnowienia.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "REK’SAI",
-      "opis": "Niewynurzone E: zmodyfikowane obrażenia podstawowe. Wynurzone E: wydłużony czas odnowienia na wyższych poziomach.",
-      "czy_buff": false
-    },
-    {
-      "bohater": "SONA",
-          "opis": "Zmniejszony przyrost pancerza. E: wydłużony czas odnowienia.",
-          "czy_buff": false
-     },
-  ]
+	"zmiany_postaci": [
+		{
+			"bohater": "DIANA",
+			"opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności i skalowanie obrażeń zadawanych potworom.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "GANGPLANK",
+			"opis": "Q: zmniejszony koszt many i skrócony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "REK’SAI",
+			"opis": "Niewynurzone E: zmodyfikowane obrażenia podstawowe. Wynurzone E: wydłużony czas odnowienia na wyższych poziomach.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SONA",
+			"opis": "Zmniejszony przyrost pancerza. E: wydłużony czas odnowienia.",
+			"czy_buff": false
+		}
+	]
 }
-

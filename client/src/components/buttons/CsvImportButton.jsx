@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 
-export  function DataImportButton() {
+const token = localStorage.getItem('token')
+export function CsvImportButton() {
 	const [importStatus, setImportStatus] = useState('')
 	const [buttonVisible, setButtonVisible] = useState(true)
 
 	const handleImportData = () => {
-		fetch('http://localhost:3001/importData', {
+		fetch('http://localhost:3001/performance/importData', {
 			method: 'POST',
+			headers: {
+				authorization: `Bearer ${token}`,
+			},
 		})
 			.then(response => {
 				if (response.ok) {
@@ -24,10 +28,8 @@ export  function DataImportButton() {
 
 	return (
 		<div>
-			{buttonVisible && <button onClick={handleImportData}>Importuj dane do bazy danych</button>}
+			{buttonVisible && <button onClick={handleImportData}>IMPORT CSV</button>}
 			<p>{importStatus}</p>
 		</div>
 	)
 }
-
-

@@ -16,7 +16,6 @@ export const Navbar = () => {
 
 	return (
 		<header>
-			<img className='logo' src={logo} alt='projekt' />
 			{loggedIn && (
 				<nav>
 					<ul className='nav_links'>

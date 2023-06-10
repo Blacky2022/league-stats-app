@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #24252a;
+	background-color: #49416d;
 }
 li,
 a,
@@ -12,7 +12,7 @@ button {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
-	color: #edf0f1;
+	color: #b3f2dd;
 	text-decoration: none;
 }
 
@@ -29,8 +29,6 @@ header {
 	/* Add any additional styles you want for the logo */
 }
 
-
-
 .nav_links {
 	list-style: none;
 }
@@ -44,11 +42,11 @@ header {
 }
 
 .nav_links li a:hover {
-	color: #0088a9;
+	color: #e0efde;
 }
 button {
 	padding: 9px 25px;
-	background-color: rgba(0, 136, 169, 1);
+	background-color: rgb(69, 53, 67);
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
@@ -56,5 +54,6 @@ button {
 }
 
 button:hover {
-	background-color: rgba(0, 136, 169, 0.8);
+	background-color: rgb(179, 242, 221);
+	color: #0c4a04;
 }
