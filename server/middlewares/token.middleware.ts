@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 import userModel, { UserDocument } from '../models/user.model'
 
 interface CustomRequest extends Request {
-  user?: UserDocument;
+	user?: UserDocument
 }
 
 interface TokenDecoded {
@@ -12,6 +12,7 @@ interface TokenDecoded {
 
 const tokenDecode = (req: Request): TokenDecoded | false => {
 	try {
+		console.log("headers:", req.headers )
 		const bearerHeader = req.headers['authorization']
 
 		if (bearerHeader) {
@@ -27,8 +28,9 @@ const tokenDecode = (req: Request): TokenDecoded | false => {
 }
 
 const auth = async (req: CustomRequest, res: Response, next: NextFunction) => {
-	const tokenDecoded = tokenDecode(req)
+	const body = req.body
 
+	const tokenDecoded = tokenDecode(req)
 	if (!tokenDecoded) throw new Error('Brak autoryzacji.')
 
 	const user: UserDocument | null = await userModel.findById(tokenDecoded.data)
