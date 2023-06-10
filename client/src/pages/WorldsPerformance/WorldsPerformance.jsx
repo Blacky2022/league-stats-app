@@ -4,6 +4,8 @@ import './Worldsperfomance.css'
 
 export function WorldsPerformance() {
 	const [champions, setChampions] = useState([])
+	const [sortColumn, setSortColumn] = useState('')
+	const [sortDirection, setSortDirection] = useState('asc')
 	const token = localStorage.getItem('token') // Zdefiniuj token
 
 	useEffect(() => {
@@ -41,19 +43,55 @@ export function WorldsPerformance() {
 		return pickBanRate.toFixed(2)
 	}
 
+	const handleSort = column => {
+		if (sortColumn === column) {
+			// If the same column is clicked again, reverse the sort direction
+			setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc')
+		} else {
+			// Sort by the selected column in ascending order
+			setSortColumn(column)
+			setSortDirection('asc')
+		}
+	}
+
+	const sortedChampions = [...champions].sort((a, b) => {
+		if (sortColumn === 'champion') {
+			return sortDirection === 'asc' ? a.champion.localeCompare(b.champion) : b.champion.localeCompare(a.champion)
+		} else {
+			const aValue = a[sortColumn]
+			const bValue = b[sortColumn]
+			return sortDirection === 'asc' ? aValue - bValue : bValue - aValue
+		}
+	})
+
 	return (
 		<div>
-			<h1>Rozgrywki Worlds - Ilość rozegranych gier: {totalGames}</h1>
+			<h1>Postacie Worlds - Ilość rozegranych gier: {totalGames}</h1>
 			<XmlImportButton />
 			<div className='table_container'>
 				<table className='champions-table'>
 					<thead>
 						<tr>
-							<th>Champion</th>
-							<th>Sum Total</th>
-							<th>Win Total</th>
-							<th>Sum Bans</th>
-							<th>Sum Pick Ban</th>
+							<th onClick={() => handleSort('champion')}>
+								Champion
+								{sortColumn === 'champion' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+							</th>
+							<th onClick={() => handleSort('sum_total')}>
+								Sum Total
+								{sortColumn === 'sum_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+							</th>
+							<th onClick={() => handleSort('win_total')}>
+								Win Total
+								{sortColumn === 'win_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+							</th>
+							<th onClick={() => handleSort('sum_bans')}>
+								Sum Bans
+								{sortColumn === 'sum_bans' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+							</th>
+							<th onClick={() => handleSort('sum_pick_ban')}>
+								Sum Pick Ban
+								{sortColumn === 'sum_pick_ban' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+							</th>
 							<th>Win Rate</th>
 							<th>Pick Rate</th>
 							<th>Ban Rate</th>
@@ -61,7 +99,7 @@ export function WorldsPerformance() {
 						</tr>
 					</thead>
 					<tbody>
-						{champions.map(champion => (
+						{sortedChampions.map(champion => (
 							<tr key={champion._id}>
 								<td>{champion.champion}</td>
 								<td>{champion.sum_total}</td>

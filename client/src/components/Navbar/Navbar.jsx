@@ -20,7 +20,7 @@ export const Navbar = () => {
 				<nav>
 					<ul className='nav_links'>
 						<li>
-							<Link to='/ChampionStats'>ChampionStats</Link>
+							<Link to='/performance'>ChampionPerformance</Link>
 						</li>
 						<li>
 							<Link to='/UpdatePerformance'>UpdatePerformance</Link>
