@@ -4,12 +4,23 @@ import tokenMiddleware from '../middlewares/token.middleware'
 
 export const performanceRouter = Router()
 
-performanceRouter.post('/importData', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
-	try {
-		await importData()
-		res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
-	} catch (error) {
-		console.error('Błąd importowania danych:', error)
-		res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
-	}
-})
+performanceRouter
+	.post('/importData', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
+		try {
+			await importData()
+			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
+		} catch (error) {
+			console.error('Błąd importowania danych:', error)
+			res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
+		}
+	})
+	.get('/:name/stats', (req: Request, res: Response): void => {
+		const championName = req.params.name
+		const championData = {
+			name: championName,
+			role: 'Mage',
+			attackDamage: 80,
+			// inne informacje o bohaterze
+		}
+		res.json(championData)
+	})
