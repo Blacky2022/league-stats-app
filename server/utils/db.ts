@@ -1,7 +1,9 @@
-import mongoose, { ConnectOptions } from 'mongoose';
+import mongoose from 'mongoose';
+
 
 // Adres i port bazy danych MongoDB
 const dbURI = 'mongodb://localhost:27017/league_stats_app';
+
 
 
 // Nawiązanie połączenia
