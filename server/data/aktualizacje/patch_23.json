@@ -1,89 +1,89 @@
 {
-"zmiany_postaci": [
-{
-"bohater": "ZERI",
-"opis": "Wprowadzono zmiany we wszystkich umiejętnościach.",
-"czy_buff": true
-},
-{
-"bohater": "ZAC",
-"opis": "Umiejętność bierna: zwiększone leczenie. Q: krótszy czas odnowienia; zwiększone skalowanie ze zdrowiem.",
-"czy_buff": true
-},
-{
-"bohater": "YUUMI",
-"opis": "Umiejętność bierna: wydłużony czas odnowienia. R: krótszy czas unieruchomienia.",
-"czy_buff": true
-},
-{
-"bohater": "TRUNDLE",
-"opis": "Zmniejszona podstawowa prędkość ataku. R: zmniejszone obrażenia.",
-"czy_buff": false
-},
-{
-"bohater": "TAHM KENCH",
-"opis": "Umiejętność bierna: dodano obrażenia magiczne. Q: zwiększone skalowanie z mocą umiejętności; zwiększone samoleczenie. W: zwiększone skalowanie z mocą umiejętności. E: zwiększone szare zdrowie. R: zwiększone skalowanie z mocą umiejętności; zmodyfikowano zanikanie tarczy.",
-"czy_buff": true
-},
-{
-"bohater": "SYNDRA",
-"opis": "Zmniejszone obrażenia dodatkowe ulepszonego W; zwiększone skalowanie z mocą umiejętności. E: zmniejszone skalowanie z mocą umiejętności; wydłużony czas odnowienia. Q: naprawiono błąd.",
-"czy_buff": false
-},
-{
-"bohater": "SION",
-"opis": "Zwiększona podstawowa mana, zwiększony przyrost many. Q: zwiększone obrażenia podstawowe.",
-"czy_buff": true
-},
-{
-"bohater": "SHYVANA",
-"opis": "E: zmniejszone obrażenia przeciwko oznaczonym wrogom.",
-"czy_buff": false
-},
-{
-"bohater": "MORDEKAISER",
-"opis": "Umiejętność bierna: zmniejszony limit obrażeń zadawanych potworom; teraz aktywuje się tylko po trafieniu dużego potwora.",
-"czy_buff": true
-},
-{
-"bohater": "MAOKAI",
-"opis": "Umiejętność bierna: zwiększone leczenie. Q: zwiększone obrażenia podstawowe; zwiększone obrażenia zadawane potworom.",
-"czy_buff": true
-},
-{
-"bohater": "MALPHITE",
-"opis": "E: zwiększone obrażenia podstawowe; zwiększone skalowanie pancerza, koszt many nie zwiększa się już z poziomem.",
-"czy_buff": true
-},
-{
-"bohater": "LILLIA",
-"opis": "Q: zmniejszone obrażenia podstawowe.",
-"czy_buff": false
-},
-{
-"bohater": "KAYN",
-"opis": "Umiejętność bierna: zwiększone obrażenia dodatkowe Cienistego Skrytobójcy. E: zwiększone skalowanie leczenia z obrażeniami od ataku.",
-"czy_buff": true
-},
-{
-"bohater": "KASSADIN",
-"opis": "Q: zwiększona podstawowa tarcza; zwiększone skalowanie tarczy z mocą umiejętności. E: zmodyfikowano.",
-"czy_buff": true
-},
-{
-"bohater": "K’SANTE",
-"opis": "Zwiększona podstawowa regeneracja zdrowia, zwiększony przyrost zdrowia. E: zmodyfikowano.",
-"czy_buff": true
-},
-{
-"bohater": "CHO’GATH",
-"opis": "Umiejętność bierna: zwiększone przywrócenie many. W: zwiększone obrażenia podstawowe. R: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
-"czy_buff": true
-},
-{
-"bohater": "AMUMU",
-"opis": "Zwiększony przyrost zdrowia. Q: zwiększony koszt many. W: zwiększone obrażenia. E: zwiększone podstawowe obrażenia magiczne.",
-"czy_buff": true
-}
-]
+	"zmiany_postaci": [
+		{
+			"bohater": "ZERI",
+			"opis": "Wprowadzono zmiany we wszystkich umiejętnościach.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ZAC",
+			"opis": "Umiejętność bierna: zwiększone leczenie. Q: krótszy czas odnowienia; zwiększone skalowanie ze zdrowiem.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "YUUMI",
+			"opis": "Umiejętność bierna: wydłużony czas odnowienia. R: krótszy czas unieruchomienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "TRUNDLE",
+			"opis": "Zmniejszona podstawowa prędkość ataku. R: zmniejszone obrażenia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TAHM KENCH",
+			"opis": "Umiejętność bierna: dodano obrażenia magiczne. Q: zwiększone skalowanie z mocą umiejętności; zwiększone samoleczenie. W: zwiększone skalowanie z mocą umiejętności. E: zwiększone szare zdrowie. R: zwiększone skalowanie z mocą umiejętności; zmodyfikowano zanikanie tarczy.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SYNDRA",
+			"opis": "Zmniejszone obrażenia dodatkowe ulepszonego W; zwiększone skalowanie z mocą umiejętności. E: zmniejszone skalowanie z mocą umiejętności; wydłużony czas odnowienia. Q: naprawiono błąd.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SION",
+			"opis": "Zwiększona podstawowa mana, zwiększony przyrost many. Q: zwiększone obrażenia podstawowe.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SHYVANA",
+			"opis": "E: zmniejszone obrażenia przeciwko oznaczonym wrogom.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "MORDEKAISER",
+			"opis": "Umiejętność bierna: zmniejszony limit obrażeń zadawanych potworom; teraz aktywuje się tylko po trafieniu dużego potwora.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MAOKAI",
+			"opis": "Umiejętność bierna: zwiększone leczenie. Q: zwiększone obrażenia podstawowe; zwiększone obrażenia zadawane potworom.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MALPHITE",
+			"opis": "E: zwiększone obrażenia podstawowe; zwiększone skalowanie pancerza, koszt many nie zwiększa się już z poziomem.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "LILLIA",
+			"opis": "Q: zmniejszone obrażenia podstawowe.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "KAYN",
+			"opis": "Umiejętność bierna: zwiększone obrażenia dodatkowe Cienistego Skrytobójcy. E: zwiększone skalowanie leczenia z obrażeniami od ataku.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "KASSADIN",
+			"opis": "Q: zwiększona podstawowa tarcza; zwiększone skalowanie tarczy z mocą umiejętności. E: zmodyfikowano.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "K'SANTE",
+			"opis": "Zwiększona podstawowa regeneracja zdrowia, zwiększony przyrost zdrowia. E: zmodyfikowano.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "CHO'GATH",
+			"opis": "Umiejętność bierna: zwiększone przywrócenie many. W: zwiększone obrażenia podstawowe. R: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "AMUMU",
+			"opis": "Zwiększony przyrost zdrowia. Q: zwiększony koszt many. W: zwiększone obrażenia. E: zwiększone podstawowe obrażenia magiczne.",
+			"czy_buff": true
+		}
+	]
 }

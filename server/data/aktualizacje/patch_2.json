@@ -1,91 +1,89 @@
 {
-  "zmiany_postaci": [
-	{
-      "bohater": "ZERI",
-      "opis": " Iskrzcie i wywołujcie spięcia na całym Summoner’s Rift z Zeri już 20 stycznia! ",
-      "czy_buff": true
-    },
-    {
-      "bohater": "JANNA",
-      "opis": "UZmodyfikowano statystyki podstawowe i wszystkie umiejętności.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "LULU",
-      "opis": "W: dłuższy czas odnowienia.",
-      "czy_buff": false
-    },
-    {
-      "bohater": "NOCTURNE",
-      "opis": "Zwiększony przyrost zdrowia. Q: zwiększone skalowanie obrażeń.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "QIYANA",
-          "opis": "Zmniejszona podstawowa regeneracja zdrowia. Q rzucone w zaroślach: skrócony czas utrzymywania się strefy.",
-          "czy_buff": false
-    },
-	{
-      "bohater": "RENGAR",
-      "opis": "R: efekt bierny pozwala teraz na skakanie, gdy Rengar jest zakamuflowany.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "SAMIRA",
-      "opis": "R: zwiększone obrażenia podstawowe.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "SENNA",
-      "opis": "Q: teraz spowalnia wrogów.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "SHEN",
-      "opis": "Q: zmniejszone obrażenia.",
-      "czy_buff": false
-    },
-    {
-      "bohater": "TAHM KENCH",
-      "opis": "Q: zwiększone spowolnienie. E: zmienione; zmniejszone obrażenia zamieniane na szare zdrowie (chyba że bohater znajduje się w pobliżu kilku wrogów). R: zwiększona wytrzymałość tarczy rzuconej na sojusznika; teraz zapewnia prędkość ruchu po pożarciu sojusznika.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "TALON",
-      "opis": "W: zmniejszone skalowanie obrażeń zadawanych potworom.",
-      "czy_buff": false
-    },
-    {
-      "bohater": "TRISTANA",
-      "opis": "Zwiększone podstawowe zdrowie i regeneracja zdrowia.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "VEIGAR",
-      "opis": "Q: skrócony czas odnowienia; zwiększona liczba ładunków za duże potwory i stwory.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "VOLIBEAR",
-      "opis": "Zwiększony przyrost podstawowych obrażeń od ataku. E: skrócony czas odnowienia.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "YASUO",
-      "opis": "Q: zwiększone skalowanie obrażeń.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "YONE",
-      "opis": "Q: zwiększone skalowanie obrażeń.",
-      "czy_buff": true
-    },
-    {
-      "bohater": "ZED",
-      "opis": "R: zmniejszone skalowanie obrażeń podstawowych.",
-      "czy_buff": false
-    }
-  ]
+	"zmiany_postaci": [
+		{
+			"bohater": "ZERI",
+			"opis": " Iskrzcie i wywołujcie spięcia na całym Summoner’s Rift z Zeri już 20 stycznia! ",
+			"czy_buff": true
+		},
+		{
+			"bohater": "JANNA",
+			"opis": "UZmodyfikowano statystyki podstawowe i wszystkie umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "LULU",
+			"opis": "W: dłuższy czas odnowienia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "NOCTURNE",
+			"opis": "Zwiększony przyrost zdrowia. Q: zwiększone skalowanie obrażeń.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "QIYANA",
+			"opis": "Zmniejszona podstawowa regeneracja zdrowia. Q rzucone w zaroślach: skrócony czas utrzymywania się strefy.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "RENGAR",
+			"opis": "R: efekt bierny pozwala teraz na skakanie, gdy Rengar jest zakamuflowany.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SAMIRA",
+			"opis": "R: zwiększone obrażenia podstawowe.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SENNA",
+			"opis": "Q: teraz spowalnia wrogów.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SHEN",
+			"opis": "Q: zmniejszone obrażenia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TAHM KENCH",
+			"opis": "Q: zwiększone spowolnienie. E: zmienione; zmniejszone obrażenia zamieniane na szare zdrowie (chyba że bohater znajduje się w pobliżu kilku wrogów). R: zwiększona wytrzymałość tarczy rzuconej na sojusznika; teraz zapewnia prędkość ruchu po pożarciu sojusznika.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "TALON",
+			"opis": "W: zmniejszone skalowanie obrażeń zadawanych potworom.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TRISTANA",
+			"opis": "Zwiększone podstawowe zdrowie i regeneracja zdrowia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "VEIGAR",
+			"opis": "Q: skrócony czas odnowienia; zwiększona liczba ładunków za duże potwory i stwory.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "VOLIBEAR",
+			"opis": "Zwiększony przyrost podstawowych obrażeń od ataku. E: skrócony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "YASUO",
+			"opis": "Q: zwiększone skalowanie obrażeń.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "YONE",
+			"opis": "Q: zwiększone skalowanie obrażeń.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ZED",
+			"opis": "R: zmniejszone skalowanie obrażeń podstawowych.",
+			"czy_buff": false
+		}
+	]
 }
-
-

@@ -1,104 +1,104 @@
 {
-    "zmiany_postaci": [
-      {
-        "bohater": "AMUMU",
-        "opis": "Q: zmniejszony koszt many; teraz zwiększa się z poziomem. R: zwiększone obrażenia podstawowe.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "ANNIE",
-        "opis": "Q: zwiększone skalowanie z mocą umiejętności. Tibbers: zwiększone podstawowe zdrowie, pancerz i odporność na magię.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "BEL’VETH",
-        "opis": "Zwiększony zasięg ataku podstawowego; zmniejszona podstawowa regeneracja zdrowia; zmniejszony przyrost zdrowia. Umiejętność bierna: zwiększona wartość ładunku na niższych poziomach, teraz osiąga maksymalną wartość na 13. poziomie; duże stwory przyznają teraz 1 ładunek. E: zmniejszone obrażenia podstawowe; zmniejszona kradzież życia na wyższych poziomach. R: dodatkowy zasięg ataku i obrażenia wybuchu zależne od brakującego zdrowia wroga nie zwiększają się już wraz z poziomem umiejętności; zmniejszone zdrowie Ławicy Pustki na niższych poziomach, teraz zwiększa się z poziomem umiejętności.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "BLITZCRANK",
-        "opis": "Q: zwiększone obrażenia podstawowe. R: zwiększone obrażenia podstawowe użycia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "DR MUNDO",
-        "opis": "Umiejętność bierna: zmniejszona regeneracja zdrowia. R: zmniejszone zwiększenie podstawowego zdrowia.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "FIORA",
-        "opis": "Umiejętność bierna: zmniejszone skalowanie z obrażeniami od ataku.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "HEIMERDINGER",
-        "opis": "Q: zwiększone podstawowe zdrowie i obrażenia zwykłych działek. E: skrócony czas odnowienia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "IVERN",
-        "opis": "Umiejętność bierna: zmniejszony koszt zdrowia i many. E: zwiększona podstawowa wytrzymałość tarczy. Stokrotka: zwiększone podstawowe zdrowie, pancerz i odporność na magię.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "JANNA",
-        "opis": "W: zmniejszona dodatkowa prędkość ruchu i spowolnienie. E: zmniejszona wytrzymałość tarczy.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "JARVAN IV",
-        "opis": "Zwiększony przyrost many. Umiejętność bierna: czas odnowienia skraca się teraz wraz z poziomami.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "KATARINA",
-        "opis": "Umiejętność bierna: zmniejszone skalowanie z obrażeniami od ataku. E: zwiększone obrażenia podstawowe; zmniejszone skalowanie z obrażeniami od ataku. R: zwiększone skalowanie prędkości ataku; zwiększona skuteczność przy trafieniu.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "LUCIAN",
-        "opis": "Zmniejszone podstawowe obrażenia od ataku. Q: zmniejszone obrażenia podstawowe na wyższych poziomach.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "SERAPHINE",
-        "opis": "E: skrócony czas odnowienia na niższych poziomach i nie skraca się już wraz z poziomem. Wydłużony czas działania spowolnienia/ogłuszenia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "SHACO",
-        "opis": "Zmniejszony podstawowy przyrost zdrowia i przyrost pancerza. Q: zwiększone skalowanie z obrażeniami od ataku. W: zwiększone skalowanie z mocą umiejętności. E: zwiększone skalowanie z obrażeniami od ataku i mocą umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "SINGED",
-        "opis": "W: zmniejszona skuteczność spowolnienia na niższych poziomach, ale zwiększona na wyższych. Teraz zwiększa się z poziomem umiejętności. R: zmniejszone statystyki dodatkowe na niższych poziomach i zwiększone na wyższych.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "SORAKA",
-        "opis": "R: zwiększone podstawowe leczenie; nie usuwa już Głębokich Ran.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "VIEGO",
-        "opis": "Umiejętność bierna: zmniejszone leczenie. W: nie sprawia już, że bohater natychmiastowo się ukrywa, jeśli zostanie rzucone podczas przygotowania E. R: zmniejszone obrażenia przeciwko najpoważniej zranionemu lub najbliższemu wrogowi.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "YORICK",
-        "opis": "Zwiększone podstawowe zdrowie i prędkość ruchu Istot Mgły. Zwiększone podstawowe zdrowie Mglistej Dziewicy; zmniejszony zasięg namierzania zależny od E.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "YUUMI",
-        "opis": "Umiejętność bierna: zwiększona wytrzymałość tarczy. E: zmniejszone podstawowe leczenie; zwiększona dodatkowa prędkość ruchu.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "ZERI",
-        "opis": "Zwiększony przyrost regeneracji zdrowia. W: zwiększone obrażenia podstawowe; zmniejszone skalowanie z obrażeniami od ataku i mocą umiejętności.",
-        "czy_buff": false
-      }
-    ]
-  }
+	"zmiany_postaci": [
+		{
+			"bohater": "AMUMU",
+			"opis": "Q: zmniejszony koszt many; teraz zwiększa się z poziomem. R: zwiększone obrażenia podstawowe.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ANNIE",
+			"opis": "Q: zwiększone skalowanie z mocą umiejętności. Tibbers: zwiększone podstawowe zdrowie, pancerz i odporność na magię.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "BEL'VETH",
+			"opis": "Zwiększony zasięg ataku podstawowego; zmniejszona podstawowa regeneracja zdrowia; zmniejszony przyrost zdrowia. Umiejętność bierna: zwiększona wartość ładunku na niższych poziomach, teraz osiąga maksymalną wartość na 13. poziomie; duże stwory przyznają teraz 1 ładunek. E: zmniejszone obrażenia podstawowe; zmniejszona kradzież życia na wyższych poziomach. R: dodatkowy zasięg ataku i obrażenia wybuchu zależne od brakującego zdrowia wroga nie zwiększają się już wraz z poziomem umiejętności; zmniejszone zdrowie Ławicy Pustki na niższych poziomach, teraz zwiększa się z poziomem umiejętności.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "BLITZCRANK",
+			"opis": "Q: zwiększone obrażenia podstawowe. R: zwiększone obrażenia podstawowe użycia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "DR MUNDO",
+			"opis": "Umiejętność bierna: zmniejszona regeneracja zdrowia. R: zmniejszone zwiększenie podstawowego zdrowia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "FIORA",
+			"opis": "Umiejętność bierna: zmniejszone skalowanie z obrażeniami od ataku.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "HEIMERDINGER",
+			"opis": "Q: zwiększone podstawowe zdrowie i obrażenia zwykłych działek. E: skrócony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "IVERN",
+			"opis": "Umiejętność bierna: zmniejszony koszt zdrowia i many. E: zwiększona podstawowa wytrzymałość tarczy. Stokrotka: zwiększone podstawowe zdrowie, pancerz i odporność na magię.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "JANNA",
+			"opis": "W: zmniejszona dodatkowa prędkość ruchu i spowolnienie. E: zmniejszona wytrzymałość tarczy.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "JARVAN IV",
+			"opis": "Zwiększony przyrost many. Umiejętność bierna: czas odnowienia skraca się teraz wraz z poziomami.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "KATARINA",
+			"opis": "Umiejętność bierna: zmniejszone skalowanie z obrażeniami od ataku. E: zwiększone obrażenia podstawowe; zmniejszone skalowanie z obrażeniami od ataku. R: zwiększone skalowanie prędkości ataku; zwiększona skuteczność przy trafieniu.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "LUCIAN",
+			"opis": "Zmniejszone podstawowe obrażenia od ataku. Q: zmniejszone obrażenia podstawowe na wyższych poziomach.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SERAPHINE",
+			"opis": "E: skrócony czas odnowienia na niższych poziomach i nie skraca się już wraz z poziomem. Wydłużony czas działania spowolnienia/ogłuszenia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SHACO",
+			"opis": "Zmniejszony podstawowy przyrost zdrowia i przyrost pancerza. Q: zwiększone skalowanie z obrażeniami od ataku. W: zwiększone skalowanie z mocą umiejętności. E: zwiększone skalowanie z obrażeniami od ataku i mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SINGED",
+			"opis": "W: zmniejszona skuteczność spowolnienia na niższych poziomach, ale zwiększona na wyższych. Teraz zwiększa się z poziomem umiejętności. R: zmniejszone statystyki dodatkowe na niższych poziomach i zwiększone na wyższych.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SORAKA",
+			"opis": "R: zwiększone podstawowe leczenie; nie usuwa już Głębokich Ran.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "VIEGO",
+			"opis": "Umiejętność bierna: zmniejszone leczenie. W: nie sprawia już, że bohater natychmiastowo się ukrywa, jeśli zostanie rzucone podczas przygotowania E. R: zmniejszone obrażenia przeciwko najpoważniej zranionemu lub najbliższemu wrogowi.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "YORICK",
+			"opis": "Zwiększone podstawowe zdrowie i prędkość ruchu Istot Mgły. Zwiększone podstawowe zdrowie Mglistej Dziewicy; zmniejszony zasięg namierzania zależny od E.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "YUUMI",
+			"opis": "Umiejętność bierna: zwiększona wytrzymałość tarczy. E: zmniejszone podstawowe leczenie; zwiększona dodatkowa prędkość ruchu.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ZERI",
+			"opis": "Zwiększony przyrost regeneracji zdrowia. W: zwiększone obrażenia podstawowe; zmniejszone skalowanie z obrażeniami od ataku i mocą umiejętności.",
+			"czy_buff": false
+		}
+	]
+}

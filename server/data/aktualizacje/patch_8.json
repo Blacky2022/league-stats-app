@@ -1,99 +1,99 @@
 {
-    "zmiany_postaci": [
-      {
-        "bohater": "SWAIN",
-        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
-        "czy_buff": true
-      },
-      {
-        "bohater": "BARD",
-        "opis": "Umiejętność bierna: zwiększone skalowanie obrażeń zadawanych przez meepy. W: zwiększone maksymalne podstawowe leczenie.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "EZREAL",
-        "opis": "R: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "FIDDLESTICKS",
-        "opis": "W: zwiększone leczenie przeciwko bohaterom.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "JHIN",
-        "opis": "W: wydłużony czas działania unieruchomienia; usunięto zmniejszenie obrażeń zadawanych potworom. E: teraz pułapki ładują się szybciej; usunięto zmniejszenie obrażeń przeciwko potworom w przypadku pierwszej pułapki.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "JINX",
-        "opis": "Zmniejszone podstawowe zdrowie.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "KAI’SA",
-        "opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności. W: zmniejszone skalowanie z mocą umiejętności. R: zwiększone skalowanie tarczy z mocą umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "KASSADIN",
-        "opis": "Q: zwiększone skalowanie tarczy z mocą umiejętności. E: zwiększone skalowanie z mocą umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "MORDEKAISER",
-        "opis": "Umiejętność bierna: zwiększona prędkość ruchu; teraz zwiększa się na 6. i 11. poziomie.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "POPPY",
-        "opis": "W: skrócony czas odnowienia. R: wydłużone nienaładowane podrzucenie; większa prędkość naładowanego pocisków i odrzucenie na większą odległość; zmniejszony zwrot czasu odnowienia po anulowaniu.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "SEJUANI",
-        "opis": "Umiejętność bierna: odliczanie Mroźnego Pancerza będzie teraz coraz krótsze z każdym kolejnym poziomem.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "SORAKA",
-        "opis": "W: zmniejszone skalowanie z mocą umiejętności.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "SYLAS",
-        "opis": "R: zmniejszony czas odnowienia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "TRISTANA",
-        "opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
-        "czy_buff": true
-      },
-      {
-        "bohater": "VEL’KOZ",
-        "opis": "W i Q: zwiększone skalowanie z mocą umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "VLADIMIR",
-        "opis": "Zwiększony podstawowy pancerz.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "XAYAH",
-        "opis": "Q: zmniejszone obrażenia podstawowe i wydłużony czas odnowienia w późnej fazie gry.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "XERATH",
-        "opis": "E: zwiększony czas działania ogłuszenia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "ZOE",
-        "opis": "Q i R: zmniejszony koszt many.",
-        "czy_buff": true
-      }
-    ]
+	"zmiany_postaci": [
+		{
+			"bohater": "SWAIN",
+			"opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
+			"czy_buff": true
+		},
+		{
+			"bohater": "BARD",
+			"opis": "Umiejętność bierna: zwiększone skalowanie obrażeń zadawanych przez meepy. W: zwiększone maksymalne podstawowe leczenie.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "EZREAL",
+			"opis": "R: czas odnowienia skraca się teraz wraz z poziomem umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "FIDDLESTICKS",
+			"opis": "W: zwiększone leczenie przeciwko bohaterom.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "JHIN",
+			"opis": "W: wydłużony czas działania unieruchomienia; usunięto zmniejszenie obrażeń zadawanych potworom. E: teraz pułapki ładują się szybciej; usunięto zmniejszenie obrażeń przeciwko potworom w przypadku pierwszej pułapki.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "JINX",
+			"opis": "Zmniejszone podstawowe zdrowie.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "KAI’SA",
+			"opis": "Umiejętność bierna: zwiększone skalowanie z mocą umiejętności. W: zmniejszone skalowanie z mocą umiejętności. R: zwiększone skalowanie tarczy z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "KASSADIN",
+			"opis": "Q: zwiększone skalowanie tarczy z mocą umiejętności. E: zwiększone skalowanie z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MORDEKAISER",
+			"opis": "Umiejętność bierna: zwiększona prędkość ruchu; teraz zwiększa się na 6. i 11. poziomie.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "POPPY",
+			"opis": "W: skrócony czas odnowienia. R: wydłużone nienaładowane podrzucenie; większa prędkość naładowanego pocisków i odrzucenie na większą odległość; zmniejszony zwrot czasu odnowienia po anulowaniu.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SEJUANI",
+			"opis": "Umiejętność bierna: odliczanie Mroźnego Pancerza będzie teraz coraz krótsze z każdym kolejnym poziomem.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SORAKA",
+			"opis": "W: zmniejszone skalowanie z mocą umiejętności.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SYLAS",
+			"opis": "R: zmniejszony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "TRISTANA",
+			"opis": "Niewielka aktualizacja, zmodyfikowano wszystkie umiejętności!",
+			"czy_buff": true
+		},
+		{
+			"bohater": "VEL’KOZ",
+			"opis": "W i Q: zwiększone skalowanie z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "VLADIMIR",
+			"opis": "Zwiększony podstawowy pancerz.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "XAYAH",
+			"opis": "Q: zmniejszone obrażenia podstawowe i wydłużony czas odnowienia w późnej fazie gry.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "XERATH",
+			"opis": "E: zwiększony czas działania ogłuszenia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ZOE",
+			"opis": "Q i R: zmniejszony koszt many.",
+			"czy_buff": true
+		}
+	]
 }

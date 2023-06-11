@@ -1,44 +1,44 @@
 {
-"zmiany_postaci": [
-{
-"bohater": "AHRI",
-"opis": "Q: zmniejszony koszt many, zwiększone skalowanie z mocą umiejętności.",
-"czy_buff": true
-},
-{
-"bohater": "BEL’VETH",
-"opis": "E: wydłużony czas odnowienia. Zmniejszone zdrowie Ławicy Pustki.",
-"czy_buff": false
-},
-{
-"bohater": "BLITZCRANK",
-"opis": "Zmniejszone podstawowe zdrowie, zmniejszony podstawowy pancerz. W: zmniejszona prędkość ataku.",
-"czy_buff": false
-},
-{
-"bohater": "CORKI",
-"opis": "Zwiększony przyrost zdrowia, zwiększony przyrost obrażeń od ataku.",
-"czy_buff": true
-},
-{
-"bohater": "MALZAHAR",
-"opis": "E: dodana możliwość wykańczania stworów.",
-"czy_buff": true
-},
-{
-"bohater": "MISS FORTUNE",
-"opis": "E: zwiększone skalowanie z mocą umiejętności, zmniejszone początkowe spowolnienie, zwiększone skalowanie spowolnienia z mocą umiejętności. R: zwiększone skalowanie z mocą umiejętności.",
-"czy_buff": true
-},
-{
-"bohater": "ORNN",
-"opis": "R: zaktualizowano.",
-"czy_buff": false
-},
-{
-"bohater": "XIN ZHAO",
-"opis": "Umiejętność bierna: zwiększone skalowanie obrażeń dodatkowych przy trzecim trafieniu z obrażeniami od ataku, zwiększone skalowanie leczenia z mocą umiejętności. E: skrócony czas odnowienia.",
-"czy_buff": true
-}
-]
+	"zmiany_postaci": [
+		{
+			"bohater": "AHRI",
+			"opis": "Q: zmniejszony koszt many, zwiększone skalowanie z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "BEL'VETH",
+			"opis": "E: wydłużony czas odnowienia. Zmniejszone zdrowie Ławicy Pustki.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "BLITZCRANK",
+			"opis": "Zmniejszone podstawowe zdrowie, zmniejszony podstawowy pancerz. W: zmniejszona prędkość ataku.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "CORKI",
+			"opis": "Zwiększony przyrost zdrowia, zwiększony przyrost obrażeń od ataku.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MALZAHAR",
+			"opis": "E: dodana możliwość wykańczania stworów.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MISS FORTUNE",
+			"opis": "E: zwiększone skalowanie z mocą umiejętności, zmniejszone początkowe spowolnienie, zwiększone skalowanie spowolnienia z mocą umiejętności. R: zwiększone skalowanie z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "ORNN",
+			"opis": "R: zaktualizowano.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "XIN ZHAO",
+			"opis": "Umiejętność bierna: zwiększone skalowanie obrażeń dodatkowych przy trzecim trafieniu z obrażeniami od ataku, zwiększone skalowanie leczenia z mocą umiejętności. E: skrócony czas odnowienia.",
+			"czy_buff": true
+		}
+	]
 }

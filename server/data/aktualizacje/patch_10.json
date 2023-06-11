@@ -1,9 +1,9 @@
 {
-    "zmiany_postaci": [
-      {
-        "bohater": "SWAIN",
-        "opis": "Zmodyfikowano R.",
-        "czy_buff": true
-      }
-    ]
-  }
+	"zmiany_postaci": [
+		{
+			"bohater": "SWAIN",
+			"opis": "Zmodyfikowano R.",
+			"czy_buff": true
+		}
+	]
+}

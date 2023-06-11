@@ -1,104 +1,104 @@
 {
-    "zmiany_postaci": [
-      {
-        "bohater": "AHRI",
-        "opis": "Krótszy czas działania Uroku na niższych poziomach.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "AZIR",
-        "opis": "W: zmniejszone skalowanie z mocą umiejętności; wydłużony czas odnowienia na niższych poziomach. E: wydłużony czas odnowienia.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "CAMILLE",
-        "opis": "Umiejętność bierna: zwiększona wytrzymałość tarczy. E: zwiększone obrażenia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "EZREAL",
-        "opis": "E: skrócony czas odnowienia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "GRAVES",
-        "opis": "Q: skrócony czas odnowienia. R: zwiększone obrażenia podstawowe.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "HECARIM",
-        "opis": "Wprowadzono zmiany we wszystkich umiejętnościach.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "KASSADIN",
-        "opis": "Q: skrócony czas odnowienia; zmniejszony koszt many.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "MAOKAI",
-        "opis": "Wprowadzono zmiany w umiejętności biernej, Q, E i R.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "MISS FORTUNE",
-        "opis": "Q: zwiększone obrażenia podstawowe na wyższych poziomach; wprowadzono zmiany w czasie rzucenia. W: zmniejszony koszt many; zwiększona dodatkowa prędkość ataku. E: wydłużony czas odnowienia; zmniejszone obrażenia podstawowe; zwiększone skalowanie z mocą umiejętności; teraz spowolnienie skaluje się z mocą umiejętności.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "NAMI",
-        "opis": "E: usunięto interakcję z Elektryzacją.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "NOCTURNE",
-        "opis": "Zwiększona podstawowa prędkość ataku. Umiejętność bierna: skrócony czas odnowienia.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "RELL",
-        "opis": "W: zwiększona prędkość ruchu podczas poruszania się pieszo. E: czas odnowienia jest teraz stały.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "RENEKTON",
-        "opis": "Q: zmniejszone obrażenia podstawowe; zwiększone skalowanie z obrażeniami od ataku.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "SETT",
-        "opis": "W: zwiększone skalowanie z obrażeniami od ataku. E: zwiększone spowolnienie.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "SIVIR",
-        "opis": "Zmniejszony przyrost obrażeń od ataku. W: zmniejszone skalowanie z obrażeniami od ataku odbicia.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "SYLAS",
-        "opis": "Zmniejszone podstawowe zdrowie. Q: wydłużony czas odnowienia.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "TARIC",
-        "opis": "Zmniejszona podstawowa odporność na magię. E: wydłużony czas odnowienia.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "TRUNDLE",
-        "opis": "W: wydłużony czas odnowienia na wszystkich poziomach.",
-        "czy_buff": false
-      },
-      {
-        "bohater": "TWISTED FATE",
-        "opis": "Q: zwiększone skalowanie z mocą umiejętności. W: zmniejszony koszt many.",
-        "czy_buff": true
-      },
-      {
-        "bohater": "WUKONG",
-        "opis": "Zmniejszona podstawowa prędkość ataku. Zmniejszona podstawowa prędkość ruchu.",
-        "czy_buff": false
-      }
-    ]
+	"zmiany_postaci": [
+		{
+			"bohater": "AHRI",
+			"opis": "Krótszy czas działania Uroku na niższych poziomach.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "AZIR",
+			"opis": "W: zmniejszone skalowanie z mocą umiejętności; wydłużony czas odnowienia na niższych poziomach. E: wydłużony czas odnowienia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "CAMILLE",
+			"opis": "Umiejętność bierna: zwiększona wytrzymałość tarczy. E: zwiększone obrażenia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "EZREAL",
+			"opis": "E: skrócony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "GRAVES",
+			"opis": "Q: skrócony czas odnowienia. R: zwiększone obrażenia podstawowe.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "HECARIM",
+			"opis": "Wprowadzono zmiany we wszystkich umiejętnościach.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "KASSADIN",
+			"opis": "Q: skrócony czas odnowienia; zmniejszony koszt many.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MAOKAI",
+			"opis": "Wprowadzono zmiany w umiejętności biernej, Q, E i R.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "MISS FORTUNE",
+			"opis": "Q: zwiększone obrażenia podstawowe na wyższych poziomach; wprowadzono zmiany w czasie rzucenia. W: zmniejszony koszt many; zwiększona dodatkowa prędkość ataku. E: wydłużony czas odnowienia; zmniejszone obrażenia podstawowe; zwiększone skalowanie z mocą umiejętności; teraz spowolnienie skaluje się z mocą umiejętności.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "NAMI",
+			"opis": "E: usunięto interakcję z Elektryzacją.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "NOCTURNE",
+			"opis": "Zwiększona podstawowa prędkość ataku. Umiejętność bierna: skrócony czas odnowienia.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "RELL",
+			"opis": "W: zwiększona prędkość ruchu podczas poruszania się pieszo. E: czas odnowienia jest teraz stały.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "RENEKTON",
+			"opis": "Q: zmniejszone obrażenia podstawowe; zwiększone skalowanie z obrażeniami od ataku.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SETT",
+			"opis": "W: zwiększone skalowanie z obrażeniami od ataku. E: zwiększone spowolnienie.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "SIVIR",
+			"opis": "Zmniejszony przyrost obrażeń od ataku. W: zmniejszone skalowanie z obrażeniami od ataku odbicia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "SYLAS",
+			"opis": "Zmniejszone podstawowe zdrowie. Q: wydłużony czas odnowienia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TARIC",
+			"opis": "Zmniejszona podstawowa odporność na magię. E: wydłużony czas odnowienia.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TRUNDLE",
+			"opis": "W: wydłużony czas odnowienia na wszystkich poziomach.",
+			"czy_buff": false
+		},
+		{
+			"bohater": "TWISTED FATE",
+			"opis": "Q: zwiększone skalowanie z mocą umiejętności. W: zmniejszony koszt many.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "WUKONG",
+			"opis": "Zmniejszona podstawowa prędkość ataku. Zmniejszona podstawowa prędkość ruchu.",
+			"czy_buff": false
+		}
+	]
 }

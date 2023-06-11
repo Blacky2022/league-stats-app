@@ -1,24 +1,24 @@
-
 {
-"zmiany_postaci": [
-{
-"bohater": "RAKAN",
-"opis": "Zmieniono z bohatera dystansowego na walczącego w zwarciu.",
-"czy_buff": true
-},
-{
-"bohater": "NUNU I WILLUMP",
-"opis": "Q: zwiększone obrażenia przeciwko jednostkom niebędącym bohaterami.",
-"czy_buff": true
-},
-{
-"bohater": "LILLIA",
-"opis": "Zmieniono z bohatera dystansowego na walczącego w zwarciu. Zmniejszone podstawowe zdrowie. Zwiększony przyrost zdrowia. Zwiększone leczenie umiejętności biernej przeciwko bohaterom.",
-"czy_buff": true
-},
-{
-"bohater": "CHO’GATH",
-"opis": "R: zwiększone obrażenia.",
-"czy_buff": true
+	"zmiany_postaci": [
+		{
+			"bohater": "RAKAN",
+			"opis": "Zmieniono z bohatera dystansowego na walczącego w zwarciu.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "NUNU I WILLUMP",
+			"opis": "Q: zwiększone obrażenia przeciwko jednostkom niebędącym bohaterami.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "LILLIA",
+			"opis": "Zmieniono z bohatera dystansowego na walczącego w zwarciu. Zmniejszone podstawowe zdrowie. Zwiększony przyrost zdrowia. Zwiększone leczenie umiejętności biernej przeciwko bohaterom.",
+			"czy_buff": true
+		},
+		{
+			"bohater": "CHO'GATH",
+			"opis": "R: zwiększone obrażenia.",
+			"czy_buff": true
+		}
+	]
 }
-]
