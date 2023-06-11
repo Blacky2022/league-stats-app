@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { XmlImportButton } from '../../components/buttons/XmlImportButton'
 import './Worldsperfomance.css'
+import { CsvImportButton } from '../../components/buttons/CsvImportButton'
+import { ClearDataButton } from '../../components/buttons/ClearDataButton'
 
 export function WorldsPerformance() {
 	const [champions, setChampions] = useState([])
 	const [sortColumn, setSortColumn] = useState('')
 	const [sortDirection, setSortDirection] = useState('asc')
-	const token = localStorage.getItem('token') // Zdefiniuj token
+	const token = localStorage.getItem('token')
 
 	useEffect(() => {
-		// Wywołaj ścieżkę w celu pobrania postaci z serwera
 		fetch('http://localhost:3001/worlds/champions', {
 			method: 'GET',
 			headers: {
@@ -68,52 +69,58 @@ export function WorldsPerformance() {
 		<div>
 			<h1>Postacie Worlds - Ilość rozegranych gier: {totalGames}</h1>
 			<XmlImportButton />
+			<CsvImportButton />
+			<ClearDataButton />
 			<div className='table_container'>
-				<table className='champions-table'>
-					<thead>
-						<tr>
-							<th onClick={() => handleSort('champion')}>
-								Champion
-								{sortColumn === 'champion' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
-							</th>
-							<th onClick={() => handleSort('sum_total')}>
-								Sum Total
-								{sortColumn === 'sum_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
-							</th>
-							<th onClick={() => handleSort('win_total')}>
-								Win Total
-								{sortColumn === 'win_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
-							</th>
-							<th onClick={() => handleSort('sum_bans')}>
-								Sum Bans
-								{sortColumn === 'sum_bans' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
-							</th>
-							<th onClick={() => handleSort('sum_pick_ban')}>
-								Sum Pick Ban
-								{sortColumn === 'sum_pick_ban' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
-							</th>
-							<th>Win Rate</th>
-							<th>Pick Rate</th>
-							<th>Ban Rate</th>
-							<th>Pick Ban Rate</th>
-						</tr>
-					</thead>
-					<tbody>
-						{sortedChampions.map(champion => (
-							<tr key={champion._id}>
-								<td>{champion.champion}</td>
-								<td>{champion.sum_total}</td>
-								<td>{champion.win_total}</td>
-								<td>{champion.sum_bans}</td>
-								<td>{champion.sum_pick_ban}</td>
-								<td>{calculateWinRate(champion.win_total, champion.sum_total)}%</td>
-								<td>{calculatePickRate(champion.sum_pick_ban, champion.sum_bans)}%</td>
-								<td>{calculateBanRate(champion.sum_bans)}%</td>
-								<td>{calculatePickBanRate(champion.sum_pick_ban)}%</td>
+				{champions.length === 0 ? (
+					<p>No data available.</p>
+				) : (
+					<table className='champions-table'>
+						<thead>
+							<tr>
+								<th onClick={() => handleSort('champion')}>
+									Champion
+									{sortColumn === 'champion' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+								</th>
+								<th onClick={() => handleSort('sum_total')}>
+									Sum Total
+									{sortColumn === 'sum_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+								</th>
+								<th onClick={() => handleSort('win_total')}>
+									Win Total
+									{sortColumn === 'win_total' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+								</th>
+								<th onClick={() => handleSort('sum_bans')}>
+									Sum Bans
+									{sortColumn === 'sum_bans' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+								</th>
+								<th onClick={() => handleSort('sum_pick_ban')}>
+									Sum Pick Ban
+									{sortColumn === 'sum_pick_ban' && <span>{sortDirection === 'asc' ? '▲' : '▼'}</span>}
+								</th>
+								<th>Win Rate</th>
+								<th>Pick Rate</th>
+								<th>Ban Rate</th>
+								<th>Pick Ban Rate</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							{sortedChampions.map(champion => (
+								<tr key={champion._id}>
+									<td>{champion.champion}</td>
+									<td>{champion.sum_total}</td>
+									<td>{champion.win_total}</td>
+									<td>{champion.sum_bans}</td>
+									<td>{champion.sum_pick_ban}</td>
+									<td>{calculateWinRate(champion.win_total, champion.sum_total)}%</td>
+									<td>{calculatePickRate(champion.sum_pick_ban, champion.sum_bans)}%</td>
+									<td>{calculateBanRate(champion.sum_bans)}%</td>
+									<td>{calculatePickBanRate(champion.sum_pick_ban)}%</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				)}
 			</div>
 		</div>
 	)

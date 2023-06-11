@@ -1,6 +1,7 @@
-import mongoose, { Schema, Document, Model } from 'mongoose'
+import mongoose, { Schema, Document, Model, Types } from 'mongoose'
 
-interface IChampionPerformance extends Document {
+export interface IChampionPerformance extends Document {
+	_id: Types.ObjectId
 	Name: string
 	Class: string
 	Role: string
@@ -15,7 +16,8 @@ interface IChampionPerformance extends Document {
 
 interface IChampionPerformanceModel extends Model<IChampionPerformance> {}
 
-const ChampionPerformanceSchema: Schema<IChampionPerformance, IChampionPerformanceModel> = new Schema({
+export const ChampionPerformanceSchema: Schema<IChampionPerformance, IChampionPerformanceModel> = new Schema({
+	_id: mongoose.Types.ObjectId,
 	Name: { type: String, required: true },
 	Class: { type: String, required: true },
 	Role: { type: String, required: true },
@@ -28,11 +30,19 @@ const ChampionPerformanceSchema: Schema<IChampionPerformance, IChampionPerforman
 	KDA: { type: Number, required: true },
 })
 
-function getCollectionName(patchNumber: number): string {
-	return `champions_performance_12_${patchNumber}`
-}
+export function createChampionPerformanceModel(patchNumber: number): Model<IChampionPerformance> {
+	const collectionName = `champion_performance_12_${patchNumber}`
 
-export const ChampionPerformanceModel = mongoose.model<IChampionPerformance, IChampionPerformanceModel>(
-	'ChampionPerformance',
-	ChampionPerformanceSchema
-)
+	// Sprawdź, czy model już istnieje
+	if (mongoose.models[collectionName]) {
+		return mongoose.models[collectionName] as Model<IChampionPerformance>
+	}
+
+	const ChampionPerformanceModel = mongoose.model<IChampionPerformance, IChampionPerformanceModel>(
+		`ChampionPerformance_12_${patchNumber}`,
+		ChampionPerformanceSchema,
+		collectionName
+	)
+
+	return ChampionPerformanceModel
+}

@@ -15,8 +15,8 @@ export const worldsRouter = Router()
 	})
 	.get('/champions', async (req: Request, res: Response): Promise<void> => {
 		try {
-			const champions = await WorldsChampionModel.find() // Pobierz wszystkie postacie z bazy danych
-			res.json(champions)
+			const champions = await WorldsChampionModel.find()
+			res.json(champions || [])
 		} catch (error) {
 			console.error('Błąd pobierania postaci:', error)
 			res.status(500).json({ error: 'Błąd pobierania postaci z bazy danych.' })
