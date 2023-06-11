@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import './PatchSelect.css'
-
+import ChampionChanges from '../ChampionChanges/ChampionChanges'
 export function PatchSelect() {
 	const [selectedPatch, setSelectedPatch] = useState('')
 	const [championData, setChampionData] = useState(null)
@@ -14,6 +14,7 @@ export function PatchSelect() {
 		fetch(`http://localhost:3001/performance/${championName}/stats/${selectedPatch}`)
 			.then(response => response.json())
 			.then(data => setChampionData(data))
+			.then(data => console.log(data))
 			.catch(error => console.error(error))
 	}, [championName, selectedPatch])
 
@@ -69,6 +70,7 @@ export function PatchSelect() {
 							))}
 						</tbody>
 					</table>
+					{selectedPatch && <ChampionChanges selectedPatch={selectedPatch} />}
 					<img
 						className='patch-image'
 						src={`/aktualizacje/patch_${selectedPatch}.jpg`}

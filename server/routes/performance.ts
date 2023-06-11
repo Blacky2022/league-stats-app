@@ -1,9 +1,9 @@
 import { Request, Response, Router } from 'express'
-import { importData } from '../utils/import_db'
+import { importDataCSV } from '../utils/import_csv'
 import tokenMiddleware from '../middlewares/token.middleware'
 import { createChampionPerformanceModel } from '../models/ranked_champion.model'
 import mongoose, { Model } from 'mongoose'
-
+import { createChangesModel } from '../models/champion_changes'
 interface ChampionRoleStats {
 	Tier: string
 	Score: number
@@ -18,9 +18,9 @@ interface ChampionRoleStats {
 export const performanceRouter = Router()
 
 performanceRouter
-	.post('/importData', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
+	.post('/importCSV', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
 		try {
-			await importData()
+			await importDataCSV()
 			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
 		} catch (error) {
 			console.error('Błąd importowania danych:', error)
@@ -48,10 +48,8 @@ performanceRouter
 			console.log({ championStats })
 
 			if (!championStats || championStats.length === 0) {
-				
 				res.status(404).json({ error: 'Champion not found.' })
 			} else {
-
 				const statsByRole: { [key: string]: ChampionRoleStats } = {}
 
 				championStats.forEach((stats: any) => {
@@ -76,5 +74,30 @@ performanceRouter
 		} catch (error) {
 			console.error('Błąd pobierania statystyk postaci:', error)
 			res.status(500).json({ error: 'Błąd pobierania statystyk postaci.' })
+		}
+	})
+	.get('/:name/patch/:selectedPatch', async (req: Request, res: Response): Promise<any> => {
+		const { name, selectedPatch } = req.params
+		const collectionName = `champion_changes_${selectedPatch}`
+		try {
+			let ChampionChangesModelPatch: Model<any>
+
+			if (mongoose.models[collectionName]) {
+				ChampionChangesModelPatch = mongoose.models[collectionName]
+			} else {
+				ChampionChangesModelPatch = createChangesModel(Number(selectedPatch))
+				console.log({ ChampionChangesModelPatch })
+			}
+
+			const championChanges = await ChampionChangesModelPatch.findOne({ bohater: name }).lean()
+
+			if (!championChanges) {
+				return res.status(404).json({ message: 'Champion not found' })
+			}
+
+			res.json(championChanges)
+		} catch (error) {
+			console.error('Error retrieving champion changes:', error)
+			res.status(500).json({ message: 'Internal server error' })
 		}
 	})

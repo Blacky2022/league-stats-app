@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { PatchSelect } from '../../components/PatchSelect/PatchSelect'
 
+
 export function ChampionStats() {
 	const { name } = useParams()
 	const [championData, setChampionData] = useState(null)
@@ -16,8 +17,6 @@ export function ChampionStats() {
 
 				// Znajdź bohatera o podanej nazwie
 				const champion = data.find(champion => champion.name === name)
-				console.log('znaleziono')
-				console.log(champion)
 				setChampionData(champion)
 			} catch (error) {
 				console.log('Error fetching champion info:', error)
