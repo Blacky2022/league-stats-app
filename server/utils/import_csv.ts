@@ -1,9 +1,8 @@
 import fs from 'fs'
 import csvParser from 'csv-parser'
 import mongoose from 'mongoose'
-import { createChampionPerformanceModel } from '../models/ranked_champion.model'
 
-export async function importData() {
+export async function importDataCSV() {
 	try {
 		const db = mongoose.connection
 
