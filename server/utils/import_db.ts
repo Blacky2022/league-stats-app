@@ -7,7 +7,7 @@ export async function importData() {
 	try {
 		const db = mongoose.connection
 
-		for (let i = 0; i < 3; i++) {
+		for (let i = 0; i < 23; i++) {
 			const patchNumber = i + 1
 			const filePath = `./data/dane z sezonu/League of Legends Champion Stats 12.${patchNumber}.csv`
 			const collectionName = `champion_performance_12_${patchNumber}`

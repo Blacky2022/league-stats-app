@@ -9,6 +9,7 @@ export interface IChampionPerformance extends Document {
 	Score: number
 	Trend: string
 	Win: number
+	RoleRate: number
 	Pick: number
 	Ban: number
 	KDA: number
@@ -25,6 +26,7 @@ export const ChampionPerformanceSchema: Schema<IChampionPerformance, IChampionPe
 	Score: { type: Number, required: true },
 	Trend: { type: String, required: true },
 	Win: { type: Number, required: true },
+	RoleRate: { type: Number, required: true },
 	Pick: { type: Number, required: true },
 	Ban: { type: Number, required: true },
 	KDA: { type: Number, required: true },
