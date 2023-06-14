@@ -1,10 +1,8 @@
-import React, { useContext } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { redirect } from 'react-router-dom'
-import logo from '../../images/logo.png'
+import React, {useContext } from 'react'
+import { Link,useNavigate } from 'react-router-dom'
 import './Navbar.css'
 import { AuthContext } from '../../AuthContext'
-
+import MenuIcon from '@mui/icons-material/Menu';
 export const Navbar = () => {
 	const { loggedIn, setLoggedIn } = useContext(AuthContext)
 	const navigate = useNavigate()
@@ -13,12 +11,13 @@ export const Navbar = () => {
 		setLoggedIn(false)
 		navigate('/user')
 	}
-
 	return (
-		<header>
-			{loggedIn && (
-				<nav>
-					<ul className='nav_links'>
+		<body className='bd'>
+			<header>
+				{loggedIn && (
+				<div className='navbar'>
+					<div className='logo'><a href='#'>IntegracjaSys</a></div>
+					<ul className='links'>
 						<li>
 							<Link to='/performance'>ChampionPerformance</Link>
 						</li>
@@ -29,13 +28,25 @@ export const Navbar = () => {
 							<Link to='/WorldsPerformance'>WorldsPerformance</Link>
 						</li>
 					</ul>
-				</nav>
-			)}
-			{loggedIn && (
-				<button className='cta' onClick={handleLogout}>
-					Logout
-				</button>
-			)}
-		</header>
+					<a><button className='action_btn' onClick={handleLogout}>Logout</button></a>
+					<MenuIcon className='toggle_btn'/>
+					<div className='dropdown_menu'>
+						<li>
+							<Link to='/performance'>ChampionPerformance</Link>
+						</li>
+						<li>
+							<Link to='/UpdatePerformance'>UpdatePerformance</Link>
+						</li>
+						<li>
+							<Link to='/WorldsPerformance'>WorldsPerformance</Link>
+						</li>
+						<li>
+							<a><button className='action_btn' onClick={handleLogout}>Logout</button></a>
+						</li>
+					</div>
+				</div>
+				)}
+			</header>
+		</body>
 	)
 }
