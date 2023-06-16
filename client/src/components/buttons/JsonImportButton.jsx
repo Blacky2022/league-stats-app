@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './button.css' 
 const token = localStorage.getItem('token')
 export function JsonImportButton() {
 	const [importStatus, setImportStatus] = useState('')
@@ -28,8 +28,8 @@ export function JsonImportButton() {
 
 	return (
 		<div>
-			{buttonVisible && <button onClick={handleImportData}>IMPORT JSON</button>}
-			<p>{importStatus}</p>
+			{buttonVisible && <button className='function-button' onClick={handleImportData}>IMPORT JSON</button>}
+			<p className='information'>{importStatus}</p>
 		</div>
 	)
 }

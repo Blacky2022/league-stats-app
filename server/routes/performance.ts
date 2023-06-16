@@ -1,6 +1,5 @@
 import { Request, Response, Router } from 'express'
 import { importDataCSV } from '../utils/import_csv'
-import tokenMiddleware from '../middlewares/token.middleware'
 import { createChampionPerformanceModel } from '../models/ranked_champion.model'
 import mongoose, { Model } from 'mongoose'
 import { createChangesModel } from '../models/champion_changes'
@@ -18,7 +17,7 @@ interface ChampionRoleStats {
 export const performanceRouter = Router()
 
 performanceRouter
-	.post('/importCSV', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
+	.post('/importCSV', async (req: Request, res: Response): Promise<void> => {
 		try {
 			await importDataCSV()
 			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
@@ -92,7 +91,7 @@ performanceRouter
 			const championChanges = await ChampionChangesModelPatch.findOne({ bohater: name }).lean()
 
 			if (!championChanges) {
-				return res.status(404).json({ message: 'Champion not found' })
+				return res.status(404).json({ message: 'Postać nie była w tym czasie modyfikowana' })
 			}
 
 			res.json(championChanges)

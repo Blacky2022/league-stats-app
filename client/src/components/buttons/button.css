@@ -1,0 +1,67 @@
+/* Przykładowy styl przycisku function-button */
+.function-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #4c8bf5;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.function-button:hover {
+	background-color: #3667e3;
+	transform: scale(1.05);
+}
+
+.function-button:active {
+	background-color: #2750b8;
+	transform: scale(0.95);
+}
+
+.function-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(76, 139, 245, 0.5);
+}
+/* Przykładowy styl przycisku logout-button */
+.logout-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #f55e5e;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+	background-color: #e63b3b;
+	transform: scale(1.05);
+}
+
+.logout-button:active {
+	background-color: #cc2828;
+	transform: scale(0.95);
+}
+
+.logout-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(245, 94, 94, 0.5);
+}
+.information {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+}

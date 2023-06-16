@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { PatchSelect } from '../../components/PatchSelect/PatchSelect'
-
+import { Navbar } from '../../components/Navbar/Navbar'
 
 export function ChampionStats() {
 	const { name } = useParams()
@@ -28,18 +28,21 @@ export function ChampionStats() {
 	}, [])
 
 	return (
-		<div>
-			{championData && (
-				<div>
-					<h1>{championData.name}</h1>
-					<img
-						className='avatar'
-						src={`https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${championData.id}.png`}
-						alt={championData.name}
-					/>
-					<PatchSelect />
-				</div>
-			)}
-		</div>
+		<>
+			<Navbar />
+			<div>
+				{championData && (
+					<div>
+						<h1>{championData.name}</h1>
+						<img
+							className='avatar'
+							src={`https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${championData.id}.png`}
+							alt={championData.name}
+						/>
+						<PatchSelect />
+					</div>
+				)}
+			</div>
+		</>
 	)
 }

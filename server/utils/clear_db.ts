@@ -4,15 +4,15 @@ async function clearDatabase() {
 	try {
 		const collections = mongoose.connection.collections
 
-		for (const key in collections) {
-			if (key !== 'users') {
-				const collection = collections[key]
+		for (const collection of Object.values(collections)) {
+			const collectionName = collection.collectionName
+
+			if (collectionName !== 'users') {
 				await collection.deleteMany()
-				console.log(`Collection ${collection.collectionName} cleared.`)
 			}
 		}
 
-		console.log('Baza danych wyczyszczona.')
+		console.log('Wyczyszczono zawartość wszystkich kolekcji oprócz "users".')
 	} catch (error) {
 		console.error('Błąd podczas czyszczenia bazy danych:', error)
 	}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import './ChampionChanges.css'
 const ChampionChanges = ({ selectedPatch }) => {
 	const [championChanges, setChampionChanges] = useState(null)
 	const [isLoading, setIsLoading] = useState(false)
@@ -39,17 +39,18 @@ const ChampionChanges = ({ selectedPatch }) => {
 	}
 
 	if (!championChanges) {
-		return null // Or you can return a different component or message if no data is available
+		return <p className='information'>Postać nie była zmieniana w tym patchu</p>
 	}
 
-	const { bohater, opis, czy_buff } = championChanges
+	const { opis, czy_buff } = championChanges
 
 	return (
-		<div>
-			<h2>Champion Changes</h2>
-			<p>Champion: {bohater}</p>
-			<p>Description: {opis}</p>
-			<p>Is Buff: {czy_buff ? 'Yes' : 'No'}</p>
+		<div className='championChanges'>
+			<div className={czy_buff ? 'Buff' : 'Nerf'}>
+				<h2>Przeprowadzone zmiany</h2>
+				<p>{opis}</p>
+				<p>{czy_buff ? 'Buff' : 'Nerf'}</p>
+			</div>
 		</div>
 	)
 }

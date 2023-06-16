@@ -28,7 +28,7 @@ export function PatchSelect() {
 		<div>
 			<h1>Champion Performance</h1>
 
-			{/* Patch selection dropdown */}
+	
 			<label htmlFor='patchSelect'>Select patch:</label>
 			<select id='patchSelect' value={selectedPatch} onChange={handlePatchChange}>
 				<option value=''>All patches</option>
@@ -39,7 +39,7 @@ export function PatchSelect() {
 				))}
 			</select>
 
-			{/* Display champion data */}
+		
 			{championData && (
 				<div>
 					<table className='champions-table'>

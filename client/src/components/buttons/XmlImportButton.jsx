@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './button.css'
 const token = localStorage.getItem('token')
 export function XmlImportButton() {
 	const [importStatus, setImportStatus] = useState('')
@@ -28,8 +28,12 @@ export function XmlImportButton() {
 
 	return (
 		<div>
-			{buttonVisibleon && <button onClick={handleImportData}>IMPORT XML</button>}
-			<p>{importStatus}</p>
+			{buttonVisibleon && (
+				<button className='function-button' onClick={handleImportData}>
+					IMPORT XML
+				</button>
+			)}
+			<p className='information'>{importStatus}</p>
 		</div>
 	)
 }

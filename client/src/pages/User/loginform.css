@@ -1,66 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-* {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat",sans-serif;
-    background-color: #24252a;
-}
-.page {
-    height: 100vh;
-    width: 100%;
+.login-div {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.cover{
-    margin-left: 30%;
-    background-color: #24252a;
-    width: 30em;
-    height: 35em;
-    border-radius: 1em;
-    box-shadow: 0 0.188em 1.550em rgb(15, 15, 15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-button{
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover {
-    background-color: rgba(0,136,169,0.8);
-}
-
-input {
-    border: none;
-    background-color: rgb(209, 209, 209);
-    height: 4em;
-    width: 80%;
-    border-radius: 0.25em;
+    height: 100vh;
+  }
+  
+  .login-form {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h1 {
+    font-size: 28px;
     text-align: center;
-    padding: 2em;
-}
-input:focus{
-    outline-color: rgba(0,136,169,0.8);;
-}
-h1{
-    color: #edf0f1;
-}
-.button-link {
-    display: inline-block;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 0.8);
+    margin-bottom: 30px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
+    font-size: 18px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
-    color: #fff;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .to-register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .to-register-button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .button-link {
+    color: #007bff;
     text-decoration: none;
-}
+  }
+  
+  .button-link:hover {
+    text-decoration: underline;
+  }
+  

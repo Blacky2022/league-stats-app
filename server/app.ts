@@ -8,25 +8,27 @@ import { worldsRouter } from './routes/worlds'
 import { seasonRouter } from './routes/season'
 import { handleError } from './utils/error'
 import mongoose from './utils/db'
-// import { handleError } from './utils/errors'
-// import { homeRouter } from './routers/home'
-// import { childRouter } from './routers/child'
-// import { giftRouter } from './routers/gift'
-//require('./utils/db')
+import dotenv from 'dotenv';
+import bodyParser from 'body-parser'
+import cookieParser from 'cookie-parser';
 const app = express()
-
+dotenv.config();
 app.use(express.json()) // Content-type: application/json
+app.use(bodyParser.json())
 app.use(
 	cors({
-		origin: `http://localhost:3000`,
+		origin: 'http://localhost:3000',
+		credentials: true
 	})
 )
+app.use(cookieParser());
+app.use(handleError)
 app.use('/', homeRouter)
 app.use('/performance', performanceRouter)
 app.use('/user', userRouter)
 app.use('/worlds', worldsRouter)
 app.use('/season', seasonRouter)
-app.use(handleError)
+
 
 if (mongoose.connection.readyState === 1) {
 	console.log('Jesteś już połączony z bazą danych.');

@@ -1,10 +1,9 @@
 import { Request, Response, Router } from 'express'
 import { ValidationError } from '../utils/error'
-import tokenMiddleware from '../middlewares/token.middleware'
 import { importDataXML } from '../utils/import_xml'
 import { WorldsChampionModel } from '../models/worlds_champion.model'
 export const worldsRouter = Router()
-	.post('/importXML', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
+	.post('/importXML', async (req: Request, res: Response): Promise<void> => {
 		try {
 			await importDataXML()
 			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })

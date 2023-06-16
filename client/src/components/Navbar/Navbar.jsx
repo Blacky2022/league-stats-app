@@ -1,52 +1,29 @@
-import React, {useContext } from 'react'
-import { Link,useNavigate } from 'react-router-dom'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Navbar.css'
-import { AuthContext } from '../../AuthContext'
-import MenuIcon from '@mui/icons-material/Menu';
+import { LogoutButton } from '../buttons/LogoutButton'
 export const Navbar = () => {
-	const { loggedIn, setLoggedIn } = useContext(AuthContext)
-	const navigate = useNavigate()
-	const handleLogout = () => {
-		localStorage.removeItem('token')
-		setLoggedIn(false)
-		navigate('/user')
-	}
+	const colorOfLink = ({ isActive }) => ({ color: isActive ? 'orange' : 'black' })
+
 	return (
-		<body className='bd'>
-			<header>
-				{loggedIn && (
-				<div className='navbar'>
-					<div className='logo'><a href='#'>IntegracjaSys</a></div>
-					<ul className='links'>
-						<li>
-							<Link to='/performance'>ChampionPerformance</Link>
-						</li>
-						<li>
-							<Link to='/UpdatePerformance'>UpdatePerformance</Link>
-						</li>
-						<li>
-							<Link to='/WorldsPerformance'>WorldsPerformance</Link>
-						</li>
-					</ul>
-					<a><button className='action_btn' onClick={handleLogout}>Logout</button></a>
-					<MenuIcon className='toggle_btn'/>
-					<div className='dropdown_menu'>
-						<li>
-							<Link to='/performance'>ChampionPerformance</Link>
-						</li>
-						<li>
-							<Link to='/UpdatePerformance'>UpdatePerformance</Link>
-						</li>
-						<li>
-							<Link to='/WorldsPerformance'>WorldsPerformance</Link>
-						</li>
-						<li>
-							<a><button className='action_btn' onClick={handleLogout}>Logout</button></a>
-						</li>
-					</div>
-				</div>
-				)}
-			</header>
-		</body>
+		<header>
+			<div className='logo'>IntegracjaSys</div>
+			<div className='nav-links'>
+				<NavLink style={colorOfLink} to='/performance'>
+					ChampionPerformance
+				</NavLink>
+
+				<NavLink style={colorOfLink} to='/UpdatePerformance'>
+					UpdatePatchNotes
+				</NavLink>
+
+				<NavLink style={colorOfLink} to='/WorldsPerformance'>
+					WorldsPerformance
+				</NavLink>
+				<LogoutButton />
+			</div>
+			<hr />
+		</header>
 	)
 }

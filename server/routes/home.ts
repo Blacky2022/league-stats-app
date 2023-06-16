@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express'
 import { ValidationError } from '../utils/error'
 import { importDataCSV } from '../utils/import_csv'
-import tokenMiddleware from '../middlewares/token.middleware'
+import { authenticateToken } from '../middlewares/token.middleware'
 import clearDatabase from '../utils/clear_db'
 import { importDataJSON } from '../utils/import_json'
 export const homeRouter = Router()
@@ -20,7 +20,7 @@ homeRouter
 				res.status(500).json({ error: 'Failed to clear database' })
 			})
 	})
-	.post('/importJSON', tokenMiddleware.auth, async (req: Request, res: Response): Promise<void> => {
+	.post('/importJSON', async (req: Request, res: Response): Promise<void> => {
 		try {
 			await importDataJSON()
 			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './button.css'
 const token = localStorage.getItem('token')
 export function ClearDataButton() {
 	const [clearStatus, setClearStatus] = useState('')
@@ -28,8 +28,12 @@ export function ClearDataButton() {
 
 	return (
 		<div>
-			{buttonVisible && <button onClick={handleClearDataButton}>CLEAR DATABASE</button>}
-			<p>{clearStatus}</p>
+			{buttonVisible && (
+				<button className='function-button' onClick={handleClearDataButton}>
+					CLEAR DATABASE
+				</button>
+			)}
+			<p className='information'>{clearStatus}</p>
 		</div>
 	)
 }

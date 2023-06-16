@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './button.css' 
 const token = localStorage.getItem('token')
 export function CsvImportButton() {
 	const [importStatus, setImportStatus] = useState('')
@@ -28,8 +28,8 @@ export function CsvImportButton() {
 
 	return (
 		<div>
-			{buttonVisible && <button onClick={handleImportData}>IMPORT CSV</button>}
-			<p>{importStatus}</p>
+			{buttonVisible && <button className='function-button' onClick={handleImportData}>IMPORT CSV</button>}
+			<p className='information'>{importStatus}</p>
 		</div>
 	)
 }
