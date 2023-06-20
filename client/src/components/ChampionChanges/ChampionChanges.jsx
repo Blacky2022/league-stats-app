@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { config } from '../../config'
 import './ChampionChanges.css'
-const ChampionChanges = ({ selectedPatch }) => {
+export const ChampionChanges = ({ selectedPatch }) => {
 	const [championChanges, setChampionChanges] = useState(null)
 	const [isLoading, setIsLoading] = useState(false)
 	const [error, setError] = useState(null)
@@ -14,7 +14,7 @@ const ChampionChanges = ({ selectedPatch }) => {
 			setError(null)
 
 			try {
-				const response = await fetch(`${baseUrl}performance/${championName}/patch/${selectedPatch}`)
+				const response = await fetch(`${baseUrl}/performance/${championName}/patch/${selectedPatch}`)
 
 				if (!response.ok) {
 					throw new Error('Champion not found')
@@ -57,4 +57,4 @@ const ChampionChanges = ({ selectedPatch }) => {
 	)
 }
 
-export default ChampionChanges
+

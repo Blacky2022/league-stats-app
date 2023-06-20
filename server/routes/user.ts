@@ -9,7 +9,7 @@ userRouter
 	.post('/signup', async (req: Request, res: Response): Promise<void> => {
 		try {
 			const { username, password } = req.body
-			console.log({ username, password })
+	
 			const checkUser = await userModel.findOne({ username })
 			if (checkUser) {
 				throw new Error('Użytkownik już istnieje.')
@@ -48,8 +48,7 @@ userRouter
 		if (!user) {
 			throw new Error('Użytkownik nie istnieje.')
 		}
-		console.log(user.password)
-		console.log({ password })
+	
 		const isPasswordValid = await bcrypt.compare(password, user.password)
 		if (!isPasswordValid) {
 			throw new Error('Nieprawidłowe hasło.')

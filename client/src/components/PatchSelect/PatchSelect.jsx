@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./PatchSelect.css";
-import ChampionChanges from "../ChampionChanges/ChampionChanges";
 import { config } from '../../config'
 import {
   LineChart,

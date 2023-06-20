@@ -15,8 +15,8 @@ seasonRouter
 			})
 		}
 	})
-	.put('/:name/patch/:selectedPatch', async (req, res) => {
-		const { name, selectedPatch } = req.params
+	.put('/changes/edit', async (req, res) => {
+		const { name, selectedPatch } = req.body
 		const { description, isBuff } = req.body
 
 		const collectionName = `champion_changes_${selectedPatch}`

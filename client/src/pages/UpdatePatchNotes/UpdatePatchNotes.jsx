@@ -1,48 +1,73 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { Navbar } from '../../components/Navbar/Navbar'
-import { useState } from 'react'
+import { UpdatePatchTable } from './UpdatePatchTable'
 
-export const UpdatePatchNotes = ({ name, selectedPatch }) => {
-	const [description, setDescription] = useState('')
-	const [isBuff, setIsBuff] = useState(false)
 
-	const handleUpdate = async () => {
-		try {
-			const response = await fetch(`/api/${name}/patch/${selectedPatch}`, {
-				method: 'PUT',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					description,
-					isBuff,
-				}),
-			})
 
-			if (response.ok) {
-				const updatedChampionChanges = await response.json()
-				console.log(updatedChampionChanges)
-				// Handle the updated data or perform any necessary actions
-			} else {
-				throw new Error('Error updating champion changes')
-			}
-		} catch (error) {
-			console.error('Error updating champion changes:', error)
-			// Handle the error or display an error message to the user
-		}
+
+export const UpdatePatchNotes = () => {
+	const [selectedCharacter, setSelectedCharacter] = useState('')
+	const [selectedPatch, setSelectedPatch] = useState('')
+	const [filteredChampions, setFilteredChampions] = useState([])
+
+	const handleCharacterSelect = character => {
+		setSelectedCharacter(character)
 	}
 
+	const handlePatchSelect = patch => {
+		setSelectedPatch(patch)
+	}
+
+	useEffect(() => {
+		async function fetchChampionSummary() {
+			try {
+				const response = await fetch(
+					'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-summary.json'
+				)
+				const data = await response.json()
+				setFilteredChampions(data.slice(1))
+			} catch (error) {
+				console.log('Error fetching champion summary:', error)
+			}
+		}
+		fetchChampionSummary()
+	})
 	return (
 		<div>
 			<Navbar />
 			<h1>Update Performance</h1>
-			<textarea value={description} onChange={e => setDescription(e.target.value)} placeholder='Enter description' />
-			<label>
-				<input type='checkbox' checked={isBuff} onChange={e => setIsBuff(e.target.checked)} />
-				Is Buff?
-			</label>
-			<button onClick={handleUpdate}>Update Patch Notes</button>
+			<div>
+				<label>Character:</label>
+
+				<select value={selectedCharacter} onChange={e => handleCharacterSelect(e.target.value)}>
+					<option value=''>Select Character</option>
+					{filteredChampions.map(champion => (
+						<option key={champion.name} value={champion.name}>
+							{champion.name}
+						</option>
+					))}
+				</select>
+			</div>
+			<div>
+				<label>Patch:</label>
+
+				<select value={selectedPatch} onChange={e => handlePatchSelect(e.target.value)}>
+					<option value=''>Select Patch</option>
+					{Array.from({ length: 23 }, (_, index) => (
+						<option key={index + 1} value={index + 1}>
+							{index + 1}
+						</option>
+					))}
+				</select>
+			</div>
+			{selectedCharacter && selectedPatch && (
+				<>
+					<h3>
+						Changes for {selectedCharacter} in Patch {selectedPatch}
+					</h3>
+					<UpdatePatchTable character={selectedCharacter} patch={selectedPatch}  />
+				</>
+			)}
 		</div>
 	)
 }
-

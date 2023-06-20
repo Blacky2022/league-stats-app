@@ -55,6 +55,7 @@ performanceRouter
 	// pobieranie informacji na temat zmian danej postaci w danym patchu
 	.get('/:name/patch/:selectedPatch', async (req: Request, res: Response): Promise<any> => {
 		const { name, selectedPatch } = req.params
+		
 		const collectionName = `champion_changes_${selectedPatch}`
 		try {
 			let ChampionChangesModelPatch: Model<any>
@@ -63,7 +64,7 @@ performanceRouter
 				ChampionChangesModelPatch = mongoose.models[collectionName]
 			} else {
 				ChampionChangesModelPatch = createChangesModel(Number(selectedPatch))
-				console.log({ ChampionChangesModelPatch })
+				
 			}
 
 			const championChanges = await ChampionChangesModelPatch.findOne({ bohater: name }).lean()
