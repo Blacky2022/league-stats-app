@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import './button.css' 
+import { config } from '../../config'
 const token = localStorage.getItem('token')
 export function CsvImportButton() {
 	const [importStatus, setImportStatus] = useState('')
 	const [buttonVisible, setButtonVisible] = useState(true)
+	const baseUrl = config.BASE_URL
 
 	const handleImportData = () => {
-		fetch('http://localhost:3001/performance/importCSV', {
+		fetch(`${baseUrl}/performance/importCSV`, {
 			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`,

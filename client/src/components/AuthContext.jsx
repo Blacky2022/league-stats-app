@@ -1,8 +1,9 @@
 import React, { createContext, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-
+import { config } from '../config'
 
 const AuthContext = createContext(false)
+const baseUrl = config.BASE_URL
 
 const AuthProvider = ({ children }) => {
 	const [loggedIn, setLoggedIn] = useState(false)
@@ -11,7 +12,7 @@ const AuthProvider = ({ children }) => {
 	useEffect(() => {
 		async function checkAuth() {
 			try {
-				const res = await fetch('http://localhost:3001/user/auth', {
+				const res = await fetch(`${baseUrl}/user/auth`, {
 					method: 'POST',
 					credentials: 'include',
 					mode: 'cors',
@@ -35,7 +36,13 @@ const AuthProvider = ({ children }) => {
 	}, [navigate])
 
 	return (
-		<>{loggedIn === false ? <h1>Loading...</h1> : <AuthContext.Provider value={loggedIn}>{children}</AuthContext.Provider>}</>
+		<>
+			{loggedIn === false ? (
+				<h1>Loading...</h1>
+			) : (
+				<AuthContext.Provider value={loggedIn}>{children}</AuthContext.Provider>
+			)}
+		</>
 	)
 }
 

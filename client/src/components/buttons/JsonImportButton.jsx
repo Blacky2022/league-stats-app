@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import './button.css' 
+import { config } from '../../config'
 const token = localStorage.getItem('token')
 export function JsonImportButton() {
 	const [importStatus, setImportStatus] = useState('')
 	const [buttonVisible, setButtonVisible] = useState(true)
-
+	const baseUrl = config.BASE_URL
+	
 	const handleImportData = () => {
-		fetch('http://localhost:3001/importJSON', {
+		fetch(`${baseUrl}/importJSON`, {
 			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`,

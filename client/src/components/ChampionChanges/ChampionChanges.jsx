@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { config } from '../../config'
 import './ChampionChanges.css'
 const ChampionChanges = ({ selectedPatch }) => {
 	const [championChanges, setChampionChanges] = useState(null)
 	const [isLoading, setIsLoading] = useState(false)
 	const [error, setError] = useState(null)
 	const championName = window.location.pathname.split('/').pop()
+	const baseUrl = config.BASE_URL
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -12,7 +14,7 @@ const ChampionChanges = ({ selectedPatch }) => {
 			setError(null)
 
 			try {
-				const response = await fetch(`http://localhost:3001/performance/${championName}/patch/${selectedPatch}`)
+				const response = await fetch(`${baseUrl}performance/${championName}/patch/${selectedPatch}`)
 
 				if (!response.ok) {
 					throw new Error('Champion not found')

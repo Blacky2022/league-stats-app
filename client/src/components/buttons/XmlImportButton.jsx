@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { config } from '../../config'
 import './button.css'
 const token = localStorage.getItem('token')
 export function XmlImportButton() {
 	const [importStatus, setImportStatus] = useState('')
 	const [buttonVisibleon, setButtonVisibleon] = useState(true)
-
+	const baseUrl = config.BASE_URL
+	
 	const handleImportData = () => {
-		fetch('http://localhost:3001/worlds/importXML', {
+		fetch(`${baseUrl}/worlds/importXML`, {
 			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`,

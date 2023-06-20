@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './loginform.css'
-
+import { config } from '../../config'
 export const RegisterPageView = () => {
 	const [username, setUsername] = useState('')
 	const [password, setPassword] = useState('')
 	const [error, setError] = useState('')
 	const navigate = useNavigate()
-
+	const baseUrl = config.BASE_URL
+	
 	const handleUsernameChange = event => {
 		setUsername(event.target.value)
 	}
@@ -18,7 +19,7 @@ export const RegisterPageView = () => {
 
 	const handleRegister = async () => {
 		try {
-			const response = await fetch(`http://localhost:3001/user/signup`, {
+			const response = await fetch(`${baseUrl}/user/signup`, {
 				method: 'POST',
 				credentials: 'include',
 				mode: 'cors',

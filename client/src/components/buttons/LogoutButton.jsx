@@ -1,12 +1,13 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './button.css' 
+import { config } from '../../config'
 export function LogoutButton() {
   const navigate = useNavigate();
-
+  const baseUrl = config.BASE_URL
+	
   const handleClick = async () => {
     try {
-      await fetch('http://localhost:3001/user/logout', {
+      await fetch(`${baseUrl}/user/logout`, {
 				method: 'POST',
 				credentials: 'include',
 				mode: 'cors',

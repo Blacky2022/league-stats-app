@@ -1,12 +1,13 @@
 import React, { useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './loginform.css'
-
+import { config } from '../../config'
 export const LoginPageView = () => {
 	const [username, setUsername] = useState('')
 	const [password, setPassword] = useState('')
 	const navigate = useNavigate()
-
+	const baseUrl = config.BASE_URL
+	
 	const handleUsernameChange = event => {
 		setUsername(event.target.value)
 	}
@@ -17,7 +18,7 @@ export const LoginPageView = () => {
 
 	const handleLogin = async () => {
 		try {
-			const res = await fetch('http://localhost:3001/user/signin', {
+			const res = await fetch(`${baseUrl}/user/signin`, {
 				method: 'POST',
 				credentials: 'include',
 				mode: 'cors',

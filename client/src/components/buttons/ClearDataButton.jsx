@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import './button.css'
+import { config } from '../../config'
+
 const token = localStorage.getItem('token')
 export function ClearDataButton() {
 	const [clearStatus, setClearStatus] = useState('')
 	const [buttonVisible, setButtonVisible] = useState(true)
-
+	const baseUrl = config.BASE_URL
+	
 	const handleClearDataButton = () => {
-		fetch('http://localhost:3001/cleardata', {
+		fetch(`${baseUrl}/cleardata`, {
 			method: 'GET',
 			headers: {
 				authorization: `Bearer ${token}`,

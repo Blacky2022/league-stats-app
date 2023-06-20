@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./PatchSelect.css";
 import ChampionChanges from "../ChampionChanges/ChampionChanges";
+import { config } from '../../config'
 import {
   LineChart,
   Line,
@@ -10,6 +11,7 @@ import {
   Legend,
   Tooltip,
 } from "recharts";
+const baseUrl = config.BASE_URL
 
 export function PatchSelect() {
   const [selectedStartPatch, setSelectedStartPatch] = useState(1);
@@ -39,7 +41,7 @@ export function PatchSelect() {
       const fetchedData = await Promise.all(
         Array.from({ length: end - start + 1 }, (_, index) =>
           fetch(
-            `http://localhost:3001/performance/${championName}/stats/${
+            `${baseUrl}/performance/${championName}/stats/${
               start + index
             }`
           ).then((response) => response.json())
@@ -56,7 +58,7 @@ export function PatchSelect() {
         const compareData = await Promise.all(
           Array.from({ length: end - start + 1 }, (_, index) =>
             fetch(
-              `http://localhost:3001/performance/${compareChampion}/stats/${
+              `${baseUrl}/performance/${compareChampion}/stats/${
                 start + index
               }`
             ).then((response) => response.json())

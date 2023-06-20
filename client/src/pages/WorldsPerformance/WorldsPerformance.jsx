@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react'
 import './Worldsperfomance.css'
 import { Navbar } from '../../components/Navbar/Navbar'
 import { AuthProvider } from '../../components/AuthContext'
-
+import { config } from '../../config'
 export function WorldsPerformance() {
+	const baseUrl = config.BASE_URL
 	const [champions, setChampions] = useState([])
 	const [sortColumn, setSortColumn] = useState('')
 	const [sortDirection, setSortDirection] = useState('asc')
 	const token = localStorage.getItem('token')
-
 	useEffect(() => {
-		fetch('http://localhost:3001/worlds/champions', {
+		fetch(`${baseUrl}/worlds/champions`, {
 			method: 'GET',
 			headers: {
 				authorization: `Bearer ${token}`,
