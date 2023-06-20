@@ -8,20 +8,20 @@ import { worldsRouter } from './routes/worlds'
 import { seasonRouter } from './routes/season'
 import { handleError } from './utils/error'
 import mongoose from './utils/db'
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'
 import bodyParser from 'body-parser'
-import cookieParser from 'cookie-parser';
+import cookieParser from 'cookie-parser'
 const app = express()
-dotenv.config();
+dotenv.config()
 app.use(express.json()) // Content-type: application/json
 app.use(bodyParser.json())
 app.use(
 	cors({
 		origin: 'http://localhost:3000',
-		credentials: true
+		credentials: true,
 	})
 )
-app.use(cookieParser());
+app.use(cookieParser())
 app.use(handleError)
 app.use('/', homeRouter)
 app.use('/performance', performanceRouter)
@@ -29,17 +29,15 @@ app.use('/user', userRouter)
 app.use('/worlds', worldsRouter)
 app.use('/season', seasonRouter)
 
-
 if (mongoose.connection.readyState === 1) {
-	console.log('Jesteś już połączony z bazą danych.');
-  } else {
-	console.log('Nie jesteś jeszcze połączony z bazą danych.');
-  }
-  
+	console.log('Jesteś już połączony z bazą danych.')
+} else {
+	console.log('Nie jesteś jeszcze połączony z bazą danych.')
+}
+
 app.listen(3001, '0.0.0.0', (): void => {
-	console.log('Listening on http://localhost:3001')
+	console.log('Tobiasz Latocha podsluchuje na : http://localhost:3001')
 })
 function Static(arg0: string): any {
 	throw new Error('Function not implemented.')
 }
-

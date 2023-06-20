@@ -42,7 +42,7 @@ userRouter.post('/signup', async (req: Request, res: Response): Promise<void> =>
 
 userRouter.post('/signin', async (req: Request, res: Response): Promise<void> => {
 	const { username, password } = req.body
-
+	
 	const user = await userModel.findOne({ username })
 
 	if (!user) {

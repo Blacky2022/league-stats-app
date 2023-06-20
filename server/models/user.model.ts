@@ -19,7 +19,7 @@ const userSchema = new Schema<UserDocument, UserModel>(
 		password: {
 			type: String,
 			required: true,
-			select: false,
+			select: true,
 		},
 	},
 	modelOptions
