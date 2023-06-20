@@ -14,12 +14,15 @@ export const Navbar = () => {
 					ChampionPerformance
 				</NavLink>
 
-				<NavLink style={colorOfLink} to='/UpdatePerformance'>
+				<NavLink style={colorOfLink} to='/UpdatePatchNotes'>
 					UpdatePatchNotes
 				</NavLink>
 
 				<NavLink style={colorOfLink} to='/WorldsPerformance'>
 					WorldsPerformance
+				</NavLink>
+				<NavLink style={colorOfLink} to='/Data'>
+					Import Data
 				</NavLink>
 				<LogoutButton />
 			</div>

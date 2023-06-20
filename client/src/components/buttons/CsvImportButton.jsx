@@ -8,7 +8,7 @@ export function CsvImportButton() {
 	const baseUrl = config.BASE_URL
 
 	const handleImportData = () => {
-		fetch(`${baseUrl}/performance/importCSV`, {
+		fetch(`${baseUrl}/importCSV`, {
 			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`,

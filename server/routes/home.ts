@@ -1,9 +1,8 @@
 import { Request, Response, Router } from 'express'
-import { ValidationError } from '../utils/error'
 import { importDataCSV } from '../utils/import_csv'
-import { authenticateToken } from '../middlewares/token.middleware'
 import clearDatabase from '../utils/clear_db'
 import { importDataJSON } from '../utils/import_json'
+import { importDataXML } from '../utils/import_xml'
 export const homeRouter = Router()
 homeRouter
 	.get('/', (req: Request, res: Response): void => {
@@ -11,14 +10,23 @@ homeRouter
 			message: 'Polaczenie dziala',
 		})
 	})
-	.get('/cleardata', (req: Request, res: Response): void => {
-		clearDatabase()
-			.then(() => {
-				res.json({ message: 'Database cleared successfully' })
-			})
-			.catch(error => {
-				res.status(500).json({ error: 'Failed to clear database' })
-			})
+	.post('/importCSV', async (req: Request, res: Response): Promise<void> => {
+		try {
+			await importDataCSV()
+			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
+		} catch (error) {
+			console.error('Błąd importowania danych:', error)
+			res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
+		}
+	})
+	.post('/importXML', async (req: Request, res: Response): Promise<void> => {
+		try {
+			await importDataXML()
+			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
+		} catch (error) {
+			console.error('Błąd importowania danych:', error)
+			res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
+		}
 	})
 	.post('/importJSON', async (req: Request, res: Response): Promise<void> => {
 		try {
@@ -28,4 +36,13 @@ homeRouter
 			console.error('Błąd importowania danych:', error)
 			res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
 		}
+	})
+	.get('/cleardata', (req: Request, res: Response): void => {
+		clearDatabase()
+			.then(() => {
+				res.json({ message: 'Database cleared successfully' })
+			})
+			.catch(error => {
+				res.status(500).json({ error: 'Failed to clear database' })
+			})
 	})

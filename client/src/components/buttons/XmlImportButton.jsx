@@ -6,9 +6,9 @@ export function XmlImportButton() {
 	const [importStatus, setImportStatus] = useState('')
 	const [buttonVisibleon, setButtonVisibleon] = useState(true)
 	const baseUrl = config.BASE_URL
-	
+
 	const handleImportData = () => {
-		fetch(`${baseUrl}/worlds/importXML`, {
+		fetch(`${baseUrl}/importXML`, {
 			method: 'POST',
 			headers: {
 				authorization: `Bearer ${token}`,

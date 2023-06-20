@@ -3,34 +3,15 @@ import { importDataCSV } from '../utils/import_csv'
 import { createChampionPerformanceModel } from '../models/ranked_champion.model'
 import mongoose, { Model } from 'mongoose'
 import { createChangesModel } from '../models/champion_changes'
-interface ChampionRoleStats {
-	Tier: string
-	Score: number
-	Trend: number
-	Win: number
-	RoleRate: number
-	Pick: number
-	Ban: number
-	KDA: number
-}
+import { ChampionRoleStats } from '../types/performance'
 
 export const performanceRouter = Router()
 
 performanceRouter
-	.post('/importCSV', async (req: Request, res: Response): Promise<void> => {
-		try {
-			await importDataCSV()
-			res.json({ message: 'Dane zostały zaimportowane do bazy danych.' })
-		} catch (error) {
-			console.error('Błąd importowania danych:', error)
-			res.status(500).json({ error: 'Błąd importowania danych do bazy danych.' })
-		}
-	})
+	//pobieranie informacji o statystykach postaci z sezonu z wybranego patcha
 	.get('/:name/stats/:selectedPatch', async (req: Request, res: Response): Promise<void> => {
 		const championName = req.params.name
 		const patchNumber = req.params.selectedPatch
-		console.log({ championName, patchNumber })
-
 		const collectionName = `champion_performance_12_${patchNumber}`
 
 		try {
@@ -40,11 +21,9 @@ performanceRouter
 				ChampionPerformanceModelPatch = mongoose.models[collectionName]
 			} else {
 				ChampionPerformanceModelPatch = createChampionPerformanceModel(Number(patchNumber))
-				console.log({ ChampionPerformanceModelPatch })
 			}
 
 			const championStats = await ChampionPerformanceModelPatch.find({ Name: championName }).exec()
-			console.log({ championStats })
 
 			if (!championStats || championStats.length === 0) {
 				res.status(404).json({ error: 'Champion not found.' })
@@ -53,7 +32,6 @@ performanceRouter
 
 				championStats.forEach((stats: any) => {
 					const { Role, Tier, Score, Trend, Win, RoleRate, Pick, Ban, KDA } = stats
-					console.log(Role)
 					if (!statsByRole[Role]) {
 						statsByRole[Role] = {
 							Tier,
@@ -67,7 +45,6 @@ performanceRouter
 						}
 					}
 				})
-				console.log(statsByRole)
 				res.json(statsByRole)
 			}
 		} catch (error) {
@@ -75,6 +52,7 @@ performanceRouter
 			res.status(500).json({ error: 'Błąd pobierania statystyk postaci.' })
 		}
 	})
+	// pobieranie informacji na temat zmian danej postaci w danym patchu
 	.get('/:name/patch/:selectedPatch', async (req: Request, res: Response): Promise<any> => {
 		const { name, selectedPatch } = req.params
 		const collectionName = `champion_changes_${selectedPatch}`
