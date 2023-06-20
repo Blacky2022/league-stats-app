@@ -67,4 +67,24 @@
   .button-link:hover {
     text-decoration: underline;
   }
+  .rights {
+    margin-bottom: 10px;
+  }
+  
+  .rights input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s ease;
+  }
+
+
+  
+  
   

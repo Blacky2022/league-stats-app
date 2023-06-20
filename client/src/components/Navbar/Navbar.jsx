@@ -3,6 +3,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import { LogoutButton } from '../buttons/LogoutButton'
+import { ForbiddenProvider } from '../ForbiddenContext'
 export const Navbar = () => {
 	const colorOfLink = ({ isActive }) => ({ color: isActive ? 'orange' : 'black' })
 
@@ -13,10 +14,11 @@ export const Navbar = () => {
 				<NavLink style={colorOfLink} to='/performance'>
 					ChampionPerformance
 				</NavLink>
-
-				<NavLink style={colorOfLink} to='/UpdatePatchNotes'>
-					UpdatePatchNotes
-				</NavLink>
+				<ForbiddenProvider>
+					<NavLink style={colorOfLink} to='/UpdatePatchNotes'>
+						UpdatePatchNotes
+					</NavLink>
+				</ForbiddenProvider>
 
 				<NavLink style={colorOfLink} to='/WorldsPerformance'>
 					WorldsPerformance

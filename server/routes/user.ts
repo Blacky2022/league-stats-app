@@ -8,14 +8,14 @@ export const userRouter = Router()
 userRouter
 	.post('/signup', async (req: Request, res: Response): Promise<void> => {
 		try {
-			const { username, password } = req.body
-	
+			const { username, password, canEdit } = req.body
+
 			const checkUser = await userModel.findOne({ username })
 			if (checkUser) {
 				throw new Error('Użytkownik już istnieje.')
 			}
 			const hashPassword = await bcrypt.hash(password, 10)
-			const user = new UserRecord({ username, password: hashPassword })
+			const user = new UserRecord({ username, password: hashPassword, canEdit })
 			await user.save()
 
 			const token = jwt.sign(
@@ -29,6 +29,9 @@ userRouter
 			)
 
 			res.cookie('token', token, {
+				httpOnly: true,
+			})
+			res.cookie('username', username, {
 				httpOnly: true,
 			})
 
@@ -48,7 +51,7 @@ userRouter
 		if (!user) {
 			throw new Error('Użytkownik nie istnieje.')
 		}
-	
+
 		const isPasswordValid = await bcrypt.compare(password, user.password)
 		if (!isPasswordValid) {
 			throw new Error('Nieprawidłowe hasło.')
@@ -67,6 +70,9 @@ userRouter
 		res.cookie('token', token, {
 			httpOnly: true,
 		})
+		res.cookie('username', username, {
+			httpOnly: true,
+		})
 		res.json({
 			message: 'zalogowano!',
 			id: user.id,
@@ -74,9 +80,18 @@ userRouter
 	})
 	.post('/logout', async (req: Request, res: Response): Promise<void> => {
 		res.clearCookie('token')
+		res.clearCookie('username')
 		res.json({ status: true })
 	})
 	.post('/auth', authenticateToken, async (req: Request, res: Response): Promise<void> => {
-		console.log(res)
 		res.json({ status: true })
+	})
+	.post('/protected-endpoint', authenticateToken, async (req: Request, res: Response) => {
+		const username = req.cookies.username
+		const user = await userModel.findOne({ username })
+		if (!user.canEdit) {
+			return res.sendStatus(403)
+		} else {
+			res.json({ status: true })
+		}
 	})

@@ -2,19 +2,25 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './loginform.css'
 import { config } from '../../config'
+
 export const RegisterPageView = () => {
 	const [username, setUsername] = useState('')
 	const [password, setPassword] = useState('')
+	const [canEdit, setCanEdit] = useState(false) // Stan checkboxa
 	const [error, setError] = useState('')
 	const navigate = useNavigate()
 	const baseUrl = config.BASE_URL
-	
+
 	const handleUsernameChange = event => {
 		setUsername(event.target.value)
 	}
 
 	const handlePasswordChange = event => {
 		setPassword(event.target.value)
+	}
+
+	const handleCanEditChange = event => {
+		setCanEdit(event.target.checked)
 	}
 
 	const handleRegister = async () => {
@@ -29,15 +35,14 @@ export const RegisterPageView = () => {
 				body: JSON.stringify({
 					username: username,
 					password: password,
+					canEdit: canEdit,
 				}),
 			})
 
 			if (response.ok) {
 				navigate('/performance')
-				alert({username, password})
 			} else {
 				const errorData = await response.json()
-				alert({username, password})
 				setError(errorData.Error)
 			}
 		} catch (err) {
@@ -52,6 +57,12 @@ export const RegisterPageView = () => {
 				<h1>Register</h1>
 				<input type='text' placeholder='username' value={username} onChange={handleUsernameChange} />
 				<input type='password' placeholder='password' value={password} onChange={handlePasswordChange} />
+				<div>
+					<label>
+						<input className = 'right' type='checkbox' checked={canEdit} onChange={handleCanEditChange} />
+						Allow edit changes
+					</label>
+				</div>
 				<div>
 					<button className='login-button' onClick={handleRegister}>
 						Register

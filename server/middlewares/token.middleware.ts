@@ -17,5 +17,3 @@ export async function authenticateToken(req: any, res: any, next: any) {
 		}
 	}
 }
-
-
