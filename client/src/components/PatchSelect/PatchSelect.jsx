@@ -5,9 +5,8 @@ import PickBanRateChart from './PickBanRateChart'
 import SelectedChampionTable from './SelectedChampTable'
 import ComparedChampionTable from './CompareTable'
 import { config } from '../../config'
-
+import ComparePatchTable from './ComparePatchTable'
 const baseUrl = config.BASE_URL
-
 export function PatchSelect() {
 	const [selectedStartPatch, setSelectedStartPatch] = useState(1)
 	const [selectedEndPatch, setSelectedEndPatch] = useState(23)
@@ -15,6 +14,7 @@ export function PatchSelect() {
 	const [compareChampion, setCompareChampion] = useState('')
 	const [filteredChampions, setFilteredChampions] = useState([])
 	const [patchData, setPatchData] = useState({})
+	const [isButtonClicked, setIsButtonClicked] = useState(false)
 	const championName = window.location.pathname.split('/').pop()
 
 	const handleCompareChampionChange = event => {
@@ -28,6 +28,13 @@ export function PatchSelect() {
 	const handleEndPatchChange = event => {
 		setSelectedEndPatch(parseInt(event.target.value))
 	}
+
+	const handleCompareButtonClick = () => {
+		setIsButtonClicked(true)
+		fetchChampionData()
+		fetchPatchData()
+	}
+
 	const fetchPatchData = useCallback(async () => {
 		try {
 			const start = Math.min(selectedStartPatch, selectedEndPatch)
@@ -41,8 +48,6 @@ export function PatchSelect() {
 				const data = await response.json()
 				const { patchNotes, comparedPatchNotes } = data
 				setPatchData({ patchNotes, comparedPatchNotes })
-				console.table('patchNotes:', patchNotes)
-				console.table('comparedPatchNotes:', comparedPatchNotes)
 			} else {
 				console.error('Error fetching patch notes:', response.statusText)
 			}
@@ -100,26 +105,21 @@ export function PatchSelect() {
 			}
 		}
 		fetchChampionSummary()
-		fetchChampionData()
-		fetchPatchData()
-	}, [fetchChampionData, compareChampion, fetchChampionData])
+	}, [])
 
 	const SelectedChampionChart = () => {
 		return (
 			<div className='chart-wrapper'>
 				{' '}
-				{/* Added wrapper div */}
-				<div className='chart-container'>
-					<div className='chart-row'>
-						<h2>Win Rate</h2>
-						<div className='Win-chart'>
-							<WinRateChart championData={championData} compareChampion={compareChampion} />
-						</div>
+				<div className='chart-row'>
+					<h2>Win Rate</h2>
+					<div className='Win-chart'>
+						<WinRateChart championData={championData} compareChampion={compareChampion} />
 					</div>
-					<div className='chart-row'>
-						<h2>Pick and Ban Rates</h2>
-						<PickBanRateChart championData={championData} compareChampion={compareChampion} />
-					</div>
+				</div>
+				<div className='chart-row'>
+					<h2>Pick and Ban Rates</h2>
+					<PickBanRateChart championData={championData} compareChampion={compareChampion} />
 				</div>
 			</div>
 		)
@@ -155,21 +155,30 @@ export function PatchSelect() {
 							</option>
 						))}
 					</select>
+					<button onClick={handleCompareButtonClick}>Zatwierdź</button>
 				</div>
 			</div>
-			<SelectedChampionChart />
+			{isButtonClicked && (
+				<>
+					<ComparePatchTable patchData={patchData} championName={championName} comparedChampion={compareChampion} />
+					<SelectedChampionChart />
 
-			<div className='table-container'>
-				{' '}
-				<SelectedChampionTable championData={championData} />
-			</div>
-			<div className='table-container'>
-				{' '}
-				<ComparedChampionTable championData={championData} />
-			</div>
-			{Object.keys(championData).map(patch => (
-				<img key={patch} className='patch-image' src={`/aktualizacje/patch_${patch.split(' ')[1]}.jpg`} alt={patch} />
-			))}
+					<div className='table-container'>
+						<SelectedChampionTable championData={championData} />
+					</div>
+					<div className='table-container'>
+						<ComparedChampionTable championData={championData} />
+					</div>
+					{Object.keys(championData).map(patch => (
+						<img
+							key={patch}
+							className='patch-image'
+							src={`/aktualizacje/patch_${patch.split(' ')[1]}.jpg`}
+							alt={patch}
+						/>
+					))}
+				</>
+			)}
 		</div>
 	)
 }

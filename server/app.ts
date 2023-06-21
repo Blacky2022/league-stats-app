@@ -36,5 +36,5 @@ if (mongoose.connection.readyState === 1) {
 }
 
 app.listen(3001, '0.0.0.0', (): void => {
-	console.log('Tobiasz Latocha podsluchuje na : http://localhost:3001')
+	console.log('podsluchuje na : http://localhost:3001')
 })

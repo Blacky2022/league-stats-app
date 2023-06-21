@@ -104,7 +104,6 @@ export const getChampionChanges = async (req: Request, res: Response): Promise<v
 
 export const getComparingChampionPatchNotes = async (req: Request, res: Response): Promise<void> => {
 	const { start: startPatch, end: endPatch, name: championName, comparedName } = req.params
-	console.log({ startPatch, endPatch, championName, comparedName })
 	if (!championName || !startPatch || !endPatch || !comparedName) {
 		res.status(400).json({ error: 'Champion name, start patch, end patch, and compared name are required.' })
 		return
