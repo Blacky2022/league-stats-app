@@ -3,6 +3,7 @@ import React from "react";
 export default function ComparedChampionTable({ championData }) {
   const getColorForTier = (tier) => {
     switch (tier) {
+      case "God":
       case "S":
         return "#ff9b00"; // Orange
       case "A":
