@@ -145,8 +145,23 @@ export function WorldsPerformance() {
                     <td>{champion.sum_bans}</td>
                     <td>{champion.sum_pick_ban}</td>
                     <td>
-                      {calculateWinRate(champion.win_total, champion.sum_total)}
-                      %
+                      <span
+                        style={{
+                          color:
+                            calculateWinRate(
+                              champion.win_total,
+                              champion.sum_total
+                            ) >= 51
+                              ? "#ff9b00"
+                              : "inherit",
+                        }}
+                      >
+                        {calculateWinRate(
+                          champion.win_total,
+                          champion.sum_total
+                        )}
+                        %
+                      </span>
                     </td>
                     <td>
                       {calculatePickRate(
