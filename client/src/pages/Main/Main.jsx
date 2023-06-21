@@ -7,7 +7,7 @@ import { WorldsPerformance } from '../WorldsPerformance/WorldsPerformance'
 import { RegisterPageView } from '../User/RegisterPage'
 import { Navigate } from 'react-router-dom'
 import { ChampionStats } from '../ChampionsPerformance/ChampionStats'
-import { DataImportView} from '../DataView/DataView'
+import { DataImportView } from '../DataView/DataView'
 import { UpdatePatchNotes } from '../UpdatePatchNotes/UpdatePatchNotes'
 export function Main() {
 	return (
@@ -21,6 +21,7 @@ export function Main() {
 				<Route exact path='/performance' Component={ChampionsPerformance} />
 				<Route exact path='/UpdatePatchNotes' Component={UpdatePatchNotes} />
 				<Route exact path='/WorldsPerformance' Component={WorldsPerformance} />
+				<Route path='*' element={<Navigate to='/user' />} />
 			</Routes>
 		</>
 	)
