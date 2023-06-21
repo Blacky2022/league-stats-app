@@ -3,7 +3,20 @@ import { createChampionPerformanceModel } from '../models/ranked_champion.model'
 import mongoose, { Model } from 'mongoose'
 import { createChangesModel } from '../models/champion_changes'
 import { ChampionRoleStats } from '../types/performance'
+import { FilterQuery, ProjectionType, QueryOptions, Document } from 'mongoose'
+interface patchNotes {
+	opis: string
+	czy_buff: boolean
+}
 
+interface ComparingChampionPatchNotes {
+	patchNotes: patchNotes[]
+	comparedPatchNotes: patchNotes[]
+}
+interface PatchNotesDocument extends Document {
+	opis: string
+	czy_buff: boolean
+}
 export const getChampionStats = async (req: Request, res: Response): Promise<void> => {
 	const championName = req.params.name
 	const patchNumber = req.params.selectedPatch
@@ -86,5 +99,49 @@ export const getChampionChanges = async (req: Request, res: Response): Promise<v
 	} catch (error) {
 		console.error('Error retrieving champion changes:', error)
 		res.status(500).json({ error: 'Failed to retrieve champion changes.' })
+	}
+}
+
+export const getComparingChampionPatchNotes = async (req: Request, res: Response): Promise<void> => {
+	const { start: startPatch, end: endPatch, name: championName, comparedName } = req.params
+	console.log({ startPatch, endPatch, championName, comparedName })
+	if (!championName || !startPatch || !endPatch || !comparedName) {
+		res.status(400).json({ error: 'Champion name, start patch, end patch, and compared name are required.' })
+		return
+	}
+
+	try {
+		const patchNotes: { patchNumber: number; opis: string; czy_buff: boolean }[] = []
+		const comparedPatchNotes: { patchNumber: number; opis: string; czy_buff: boolean }[] = []
+
+		for (let patchNumber = Number(startPatch); patchNumber <= Number(endPatch); patchNumber++) {
+			const collectionName = `champion_patch_notes_${patchNumber}`
+			const ChampionPatchNotesModel: Model<PatchNotesDocument> =
+				mongoose.models[collectionName] || createChangesModel(Number(patchNumber))
+
+			const notes: PatchNotesDocument | null = await ChampionPatchNotesModel.findOne({ bohater: championName }).exec()
+			const comparedNotes: PatchNotesDocument | null = await ChampionPatchNotesModel.findOne({
+				bohater: comparedName,
+			}).exec()
+
+			if (notes) {
+				const { opis, czy_buff } = notes
+				patchNotes.push({ patchNumber, opis, czy_buff })
+			}
+			if (comparedNotes) {
+				const { opis, czy_buff } = comparedNotes
+				comparedPatchNotes.push({ patchNumber, opis, czy_buff })
+			}
+		}
+
+		if (patchNotes.length === 0) {
+			res.status(404).json({ error: 'Patch notes not found for the given champion and patch range.' })
+			return
+		}
+
+		res.json({ patchNotes, comparedPatchNotes })
+	} catch (error) {
+		console.error('Error retrieving champion patch notes:', error)
+		res.status(500).json({ error: 'Failed to retrieve champion patch notes.' })
 	}
 }
