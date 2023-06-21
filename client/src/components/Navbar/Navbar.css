@@ -1,77 +1,83 @@
 /* Navbar.css */
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	background-color: #111;
-	color: #fff;
-}
-
-.logo {
-	font-size: 24px;
-	font-weight: bold;
-	color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
 }
 
 .nav-links {
-	display: flex;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 50px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
 }
 
 .nav-links a {
-	display: inline-block;
-	padding: 10px 20px;
-	color: rgb(161, 161, 161);
-	text-decoration: none;
-	margin-right: 20px;
-	transition: background-color 0.3s ease, color 0.3s ease;
-	border: 1px solid #1b4296;
-	background-color: #1b4296;
-	border-radius: 4px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(161, 161, 161);
+  text-decoration: none;
+  margin-right: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: 1px solid #1b4296;
+  background-color: #1b4296;
+  border-radius: 4px;
 }
 
 .nav-links a:hover {
-	background-color: #3365e4;
-	color: white;
+  background-color: #3365e4;
+  color: white;
 }
 
 .nav-links a.active {
-	background-color: #1e47a1;
-	color: white;
+  background-color: #1e47a1;
+  color: white;
 }
 
 hr {
-	border: none;
-	border-top: 1px solid #666;
-	margin: 0;
+  border: none;
+  border-top: 1px solid #666;
+  margin: 0;
 }
 .nav-links a {
-	display: inline-block;
-	padding: 10px 20px;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-	background-color: #4c8bf5;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4c8bf5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-	background-color: #3667e3;
-	transform: scale(1.05);
+  background-color: #3667e3;
+  transform: scale(1.05);
 }
 
 .nav-links a:active {
-	background-color: #2750b8;
-	transform: scale(0.95);
+  background-color: #2750b8;
+  transform: scale(0.95);
 }
 
 .nav-links a:focus {
-	outline: none;
-	box-shadow: 0 0 0 3px rgba(76, 139, 245, 0.5);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 139, 245, 0.5);
 }

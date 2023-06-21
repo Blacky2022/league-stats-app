@@ -43,27 +43,31 @@ export function ChampionsPerformance() {
     <>
       <Navbar />
       <div className="container">
-        <input
-          className="search-input"
-          type="text"
-          value={searchQuery}
-          onChange={handleSearch}
-          placeholder="Search champion..."
-        />
-        {filteredChampions.map((champion) => (
-          <Link
-            to={`/performance/${champion.name}`}
-            className="champion"
-            key={champion.id}
-          >
-            <img
-              className="avatar"
-              src={`https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${champion.id}.png`}
-              alt={champion.name}
-            />
-            <span className="name">{champion.name}</span>
-          </Link>
-        ))}
+        <div className="search-bar">
+          <input
+            className="search-input"
+            type="text"
+            value={searchQuery}
+            onChange={handleSearch}
+            placeholder="Search champion..."
+          />
+        </div>
+        <div className="champion-list">
+          {filteredChampions.map((champion) => (
+            <Link
+              to={`/performance/${champion.name}`}
+              className="champion"
+              key={champion.id}
+            >
+              <img
+                className="avatar"
+                src={`https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/${champion.id}.png`}
+                alt={champion.name}
+              />
+              <span className="name">{champion.name}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </>
   );

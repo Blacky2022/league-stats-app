@@ -1,13 +1,43 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--ugg-background);
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Dodatkowe style dla innych elementów na stronie */
+:root {
+  --ugg-background-main: #070720;
+  --ugg-background: #0b0b23;
+  --ugg-background-alt: #17172e;
+  --ugg-background-alt-2: #222238;
+  --ugg-background-alt-3: #17172e;
+  --font-color-main: #fff;
+  --font-color-alt: #bbbedb;
+  --font-color-grey: #92929d;
+  --font-color-grey-alt: #bbbedb;
+  --forward-slash: #4f4f60;
+  --border-color-grey: #2c2c40;
+  --ugg-box-shadow: none;
+  --ugg-common-blue: #08a6ff;
+  --ugg-common-blue-hover: #008ad8;
+  --ugg-success-green: #2a9b73;
+  --ugg-success-volxd: #ff9b00;
+  --input-bg: #31334a;
+  --input-border-color: #31334a;
+  --match-card-bg-win: rgba(8, 166, 255, 0.3);
+  --match-card-bg-win-hover: rgba(8, 166, 255, 0.4);
+  --match-card-win-inner-divider: #064b80;
+  --match-card-bg-loss: #45192b;
+  --match-card-bg-loss-hover: #511b2e;
+  --match-card-loss-inner-divider: #5a1f2e;
+  --match-card-bg-remake: #5e0000;
+  --match-card-bg-remake-hover: #28283e;
+  --match-card-remake-inner-divider: #17172e;
+}
