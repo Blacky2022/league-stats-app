@@ -1,19 +1,14 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config()
 
-
-// Adres i port bazy danych MongoDB
-const dbURI = 'mongodb://localhost:27017/league_stats_app';
-
-
-
-// Nawiązanie połączenia
 mongoose
-  .connect(dbURI)
-  .then(() => {
-    console.log('Połączono z bazą danych.');
-  })
-  .catch((err) => {
-    console.error('Błąd połączenia z bazą danych:', err);
-  });
+	.connect(`${process.env.dbUrl}/${process.env.dbName}`)
+	.then(() => {
+		console.log('Połączono z bazą danych.')
+	})
+	.catch(err => {
+		console.error('Błąd połączenia z bazą danych:', err)
+	})
 
-export default mongoose;
+export default mongoose

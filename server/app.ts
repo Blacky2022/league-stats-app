@@ -6,14 +6,15 @@ import { performanceRouter } from './routes/performance'
 import { userRouter } from './routes/user'
 import { worldsRouter } from './routes/worlds'
 import { seasonRouter } from './routes/season'
-import { handleError } from './utils/error'
 import mongoose from './utils/db'
 import dotenv from 'dotenv'
 import bodyParser from 'body-parser'
 import cookieParser from 'cookie-parser'
+
 const app = express()
 dotenv.config()
-app.use(express.json()) // Content-type: application/json
+
+app.use(express.json())
 app.use(bodyParser.json())
 app.use(
 	cors({
@@ -22,7 +23,6 @@ app.use(
 	})
 )
 app.use(cookieParser())
-app.use(handleError)
 app.use('/', homeRouter)
 app.use('/performance', performanceRouter)
 app.use('/user', userRouter)
@@ -38,6 +38,3 @@ if (mongoose.connection.readyState === 1) {
 app.listen(3001, '0.0.0.0', (): void => {
 	console.log('Tobiasz Latocha podsluchuje na : http://localhost:3001')
 })
-function Static(arg0: string): any {
-	throw new Error('Function not implemented.')
-}

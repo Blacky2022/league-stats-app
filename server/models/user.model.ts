@@ -1,5 +1,4 @@
 import mongoose, { Document, Model, Schema } from 'mongoose'
-import { modelOptions } from './models.options'
 
 export interface UserDocument extends Document {
 	username: string
@@ -9,25 +8,21 @@ export interface UserDocument extends Document {
 
 export interface UserModel extends Model<UserDocument> {}
 
-const userSchema = new Schema<UserDocument, UserModel>(
-	{
-		username: {
-			type: String,
-			required: true,
-			unique: true,
-		},
-		password: {
-			type: String,
-			required: true,
-			select: false,
-		},
-		canEdit: {
-			type: Boolean,
-			required: true,
-		},
+const userSchema = new Schema<UserDocument, UserModel>({
+	username: {
+		type: String,
+		required: true,
+		unique: true,
 	},
-	modelOptions
-)
+	password: {
+		type: String,
+		required: true,
+	},
+	canEdit: {
+		type: Boolean,
+		required: true,
+	},
+})
 
 const userModel: UserModel = mongoose.model<UserDocument, UserModel>('User', userSchema)
 
