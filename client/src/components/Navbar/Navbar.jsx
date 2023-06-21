@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <header>
       <div className="nav-links">
-        <div className="logo">IntegracjaSys</div>
+        <div className="logo">IntegracjaSystemów</div>
         <NavLink style={colorOfLink} to="/performance">
           ChampionPerformance
         </NavLink>
