@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 mongoose
-	.connect(`${process.env.dbUrl}/${process.env.dbName}`)
+	.connect(`${process.env.DATABASE_HOST}`)
 	.then(() => {
 		console.log('Połączono z bazą danych.')
 	})
