@@ -1,1 +1,7 @@
 data
+data/mongo/_mdb_catalog.wt
+.gitignore
+data/mongo/mongod.lock
+data/mongo/sizeStorer.wt
+data/mongo/WiredTiger.turtle
+data/mongo/WiredTiger.wt
