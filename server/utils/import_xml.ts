@@ -5,7 +5,7 @@ import { WorldsChampionModel, IWorldsChampion } from '../models/worlds_champion.
 
 export async function importDataXML() {
 	// Wczytaj zawartość pliku XML
-	const xmlData = fs.readFileSync('./data/dane z mistrzostw/worlds_champions.xml', 'utf-8')
+	const xmlData = fs.readFileSync('./data_to_import/dane z mistrzostw/worlds_champions.xml', 'utf-8')
 
 	// Utwórz parser XML
 	const parser = new xml2js.Parser()

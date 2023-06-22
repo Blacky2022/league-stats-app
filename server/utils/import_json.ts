@@ -6,7 +6,7 @@ export async function importDataJSON() {
 		const db = mongoose.connection
 
 		for (let patchNumber = 1; patchNumber <= 23; patchNumber++) {
-			const filePath = `./data/aktualizacje/patch_${patchNumber}.json`
+			const filePath = `./data_to_import/aktualizacje/patch_${patchNumber}.json`
 			const collectionName = `champion_changes_${patchNumber}`
 
 			const rawData = fs.readFileSync(filePath, 'utf-8')

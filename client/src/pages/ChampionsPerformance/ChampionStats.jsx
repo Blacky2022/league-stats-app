@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { PatchSelect } from "../../components/PatchSelect/PatchSelect";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./ChampionStats.css";
+import { AuthProvider } from "../../components/AuthContext";
 export function ChampionStats() {
   const { name } = useParams();
   const [championData, setChampionData] = useState(null);
@@ -28,7 +29,7 @@ export function ChampionStats() {
   }, []);
 
   return (
-    <>
+    <AuthProvider>
       <Navbar />
       <div className="container">
         {championData && (
@@ -43,6 +44,6 @@ export function ChampionStats() {
           </>
         )}
       </div>
-    </>
+      </AuthProvider>
   );
 }

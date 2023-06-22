@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ChampionsPerformance.css";
 import { Navbar } from "../../components/Navbar/Navbar";
+import { AuthProvider } from "../../components/AuthContext";
 export function ChampionsPerformance() {
   const [championSummary, setChampionSummary] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -40,7 +41,7 @@ export function ChampionsPerformance() {
   }
 
   return (
-    <>
+    <AuthProvider>
       <Navbar />
       <div className="container">
         <div className="search-bar">
@@ -69,6 +70,6 @@ export function ChampionsPerformance() {
           ))}
         </div>
       </div>
-    </>
+    </AuthProvider>
   );
 }

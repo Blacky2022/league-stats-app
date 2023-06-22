@@ -3,7 +3,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import { UpdatePatchTable } from "./UpdatePatchTable";
 import "./UpdatePatchNotes.css"; // Import the CSS file
 import { Select, MenuItem } from "@mui/material";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import { AuthProvider } from "../../components/AuthContext";
 export const UpdatePatchNotes = () => {
   const [selectedCharacter, setSelectedCharacter] = useState("");
   const [selectedPatch, setSelectedPatch] = useState("");
@@ -33,6 +33,7 @@ export const UpdatePatchNotes = () => {
   }, []);
 
   return (
+    <AuthProvider>
     <div>
       <Navbar />
       <div className="container-stats">
@@ -105,5 +106,6 @@ export const UpdatePatchNotes = () => {
         )}
       </div>
     </div>
+    </AuthProvider>
   );
 };
