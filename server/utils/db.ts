@@ -3,8 +3,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 mongoose
-	//.connect(`${process.env.DATABASE_HOST}`)
-	.connect(`mongodb://localhost:27017/league_stats_app`)
+	.connect(`${process.env.DATABASE_HOST}`)
+	//.connect(`mongodb://localhost:27017/league_stats_app`)
 	.then(() => {
 		console.log('Połączono z bazą danych.')
 	})
