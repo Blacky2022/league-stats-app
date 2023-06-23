@@ -6,7 +6,7 @@ RUN npm install -g nodemon@2.0.22
 
 COPY package.json .
 
-RUN npm install --unsafe-perm
+RUN npm install
 
 COPY . .
 
